@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Principal Optimizado -->
+  <title>Catalogo de Inflables | Renta CDMX y Edomex | INFLAPY</title>
+  <meta name="description" content="Catalogo de inflables para fiestas en CDMX. Filtra por tamaño y capacidad. Brincolines y castillos con entrega gratis. Cotiza ahora.">
+  <meta name="keywords" content="renta de inflables, inflables para fiestas, inflables para eventos, catalogo inflables, brincolines CDMX, castillos inflables, renta inflables Estado de México">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="INFLAPY - Renta de Inflables">
+  <link rel="canonical" href="https://inflablesparafiestas.com.mx/catalogo.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://inflablesparafiestas.com.mx/catalogo.html">
+  <meta property="og:title" content="Catalogo de Inflables | Renta CDMX | INFLAPY">
+  <meta property="og:description" content="Explora nuestro catalogo completo de inflables para fiestas. Filtra por tamaño y encuentra el perfecto para tu evento.">
+  <meta property="og:image" content="https://inflablesparafiestas.com.mx/img/og-catalogo.jpg">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Catalogo de Inflables | INFLAPY">
+  <meta name="twitter:description" content="Explora y filtra inflables para fiestas en CDMX. Entrega gratis.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <meta name="theme-color" content="#ff12cc">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+    /* ============================================
+       CATALOGO - Estilos Especificos
+       ============================================ */
+
+    /* Variables del Catalogo */
+    :root {
+      --catalog-max-width: 1400px;
+      --sidebar-width: 280px;
+      --card-gap: 1.5rem;
+    }
+
+    /* Container del Catalogo */
+    .catalog-container {
+      max-width: var(--catalog-max-width);
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-lg);
+    }
+
+    /* ============================================
+       HERO CATALOGO - Estilo Homologado
+       ============================================ */
+    .hero-catalogo {
+      background: linear-gradient(135deg, var(--color-dark) 0%, #1a0a20 50%, var(--color-dark) 100%);
+      padding: var(--space-4xl) 0 var(--space-3xl);
+      position: relative;
+      overflow: hidden;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-catalogo::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(255, 18, 204, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(255, 107, 107, 0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-catalogo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3xl);
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 900px) {
+      .hero-catalogo-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+      }
+    }
+
+    .hero-catalogo-left {
+      text-align: left;
+    }
+
+    @media (max-width: 900px) {
+      .hero-catalogo-left {
+        text-align: center;
+      }
+    }
+
+    .hero-catalogo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      background: rgba(255, 18, 204, 0.15);
+      border: 1px solid rgba(255, 18, 204, 0.3);
+      padding: var(--space-sm) var(--space-lg);
+      border-radius: var(--radius-full);
+      font-size: 0.95rem;
+      color: var(--color-primary);
+      margin-bottom: var(--space-lg);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .hero-catalogo-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 700;
+      color: var(--color-text);
+      line-height: 1.1;
+      margin-bottom: var(--space-lg);
+    }
+
+    .hero-catalogo-subtitle {
+      font-size: 1.15rem;
+      color: var(--color-text-muted);
+      max-width: 600px;
+      line-height: 1.7;
+      margin-bottom: var(--space-xl);
+    }
+
+    .hero-catalogo-stats {
+      display: flex;
+      gap: var(--space-xl);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-xl);
+    }
+
+    @media (max-width: 900px) {
+      .hero-catalogo-stats {
+        justify-content: center;
+      }
+    }
+
+    .hero-stat {
+      text-align: center;
+      padding: var(--space-md);
+      background: rgba(255, 18, 204, 0.1);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 18, 204, 0.2);
+    }
+
+    .hero-stat-icon {
+      font-size: 1.5rem;
+      display: block;
+      margin-bottom: var(--space-xs);
+    }
+
+    .hero-stat-value {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      display: block;
+    }
+
+    .hero-stat-label {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .hero-catalogo-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-catalogo-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 18, 204, 0.15);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-2xl);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-card-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: var(--space-lg);
+      line-height: 1.3;
+    }
+
+    .hero-card-text {
+      font-size: 1rem;
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      margin-bottom: var(--space-lg);
+    }
+
+    .hero-card-text:last-child {
+      margin-bottom: 0;
+    }
+
+    .hero-card-text strong {
+      color: var(--color-text);
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: var(--space-md) 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .breadcrumb-list {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .breadcrumb-list a {
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .breadcrumb-list a:hover {
+      color: var(--color-primary);
+    }
+
+    .breadcrumb-list .separator {
+      color: var(--color-text-muted);
+      opacity: 0.5;
+    }
+
+    .breadcrumb-list .current {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    /* Layout Principal */
+    .catalog-layout {
+      display: grid;
+      grid-template-columns: var(--sidebar-width) 1fr;
+      gap: var(--space-2xl);
+      align-items: start;
+    }
+
+    /* ============================================
+       SIDEBAR
+       ============================================ */
+    .catalog-sidebar {
+      position: sticky;
+      top: 100px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-xl);
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .sidebar-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-text);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .sidebar-reset {
+      font-size: 0.875rem;
+      color: var(--color-primary);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+    }
+
+    .sidebar-reset:hover {
+      background: rgba(255, 18, 204, 0.1);
+    }
+
+    /* Grupos de Filtros */
+    .filter-group {
+      margin-bottom: var(--space-xl);
+    }
+
+    .filter-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .filter-group-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-md);
+    }
+
+    /* Filtros de Categoria (Botones) */
+    .filter-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .filter-btn {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      padding: var(--space-md) var(--space-lg);
+      background: transparent;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      text-align: left;
+      width: 100%;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--color-primary);
+      background: rgba(255, 18, 204, 0.05);
+    }
+
+    .filter-btn.active {
+      border-color: var(--color-primary);
+      background: rgba(255, 18, 204, 0.1);
+    }
+
+    .filter-btn-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .filter-btn-icon.all { background: linear-gradient(135deg, #ff12cc, #8B5CF6); }
+    .filter-btn-icon.chico { background: linear-gradient(135deg, #06D6A0, #00D9FF); }
+    .filter-btn-icon.mediano { background: linear-gradient(135deg, #FF9F43, #FFD93D); }
+    .filter-btn-icon.grande { background: linear-gradient(135deg, #8B5CF6, #ff12cc); }
+
+    .filter-btn-text {
+      flex: 1;
+    }
+
+    .filter-btn-label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--color-text);
+    }
+
+    .filter-btn-count {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Checkbox Filters */
+    .filter-checkboxes {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .filter-checkbox {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      padding: var(--space-sm) 0;
+      cursor: pointer;
+      transition: opacity var(--transition-fast);
+    }
+
+    .filter-checkbox:hover {
+      opacity: 0.8;
+    }
+
+    .filter-checkbox input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--color-primary);
+      cursor: pointer;
+    }
+
+    .filter-checkbox-label {
+      font-size: 0.9rem;
+      color: var(--color-text);
+    }
+
+    /* Range Slíder */
+    .filter-range {
+      padding: var(--space-sm) 0;
+    }
+
+    .filter-range-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-md);
+    }
+
+    .filter-range-label {
+      font-size: 0.9rem;
+      color: var(--color-text);
+    }
+
+    .filter-range-value {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+
+    .filter-range input[type="range"] {
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: var(--color-border);
+      outline: none;
+      -webkit-appearance: none;
+    }
+
+    .filter-range input[type="range"]::-webkit-slíder-thumb {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(255, 18, 204, 0.3);
+    }
+
+    /* Sidebar CTA */
+    .sidebar-cta {
+      margin-top: var(--space-xl);
+      padding: var(--space-lg);
+      background: linear-gradient(135deg, rgba(255, 18, 204, 0.1), rgba(139, 92, 246, 0.1));
+      border-radius: var(--radius-lg);
+      text-align: center;
+    }
+
+    .sidebar-cta-text {
+      font-size: 0.9rem;
+      color: var(--color-text);
+      margin-bottom: var(--space-md);
+    }
+
+    .sidebar-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: var(--space-md) var(--space-lg);
+      background: var(--color-primary);
+      color: white;
+      border: none;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+
+    .sidebar-cta-btn:hover {
+      background: var(--color-primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* ============================================
+       PRODUCTOS GRID
+       ============================================ */
+    .catalog-main {
+      min-width: 0;
+    }
+
+    .catalog-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .catalog-results {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+    }
+
+    .catalog-results strong {
+      color: var(--color-text);
+    }
+
+    .catalog-sort {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .catalog-sort-label {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+    }
+
+    .catalog-sort-select {
+      padding: var(--space-sm) var(--space-md);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      background: var(--color-surface);
+      color: var(--color-text);
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+
+    /* Products Grid */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: var(--card-gap);
+    }
+
+    /* Product Card */
+    .catalog-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      transition: all var(--transition-base);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .catalog-card-image-link {
+      display: block;
+      text-decoration: none;
+    }
+
+    .catalog-card:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .catalog-card-image {
+      position: relative;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, rgba(255, 18, 204, 0.1), rgba(139, 92, 246, 0.1));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .catalog-card-emoji {
+      font-size: 4rem;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+      transition: transform var(--transition-base);
+    }
+
+    .catalog-card:hover .catalog-card-emoji {
+      transform: scale(1.1);
+    }
+
+    .catalog-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-base);
+    }
+
+    .catalog-card:hover .catalog-card-img {
+      transform: scale(1.05);
+    }
+
+    .catalog-card-badge {
+      position: absolute;
+      top: var(--space-md);
+      left: var(--space-md);
+      padding: var(--space-xs) var(--space-md);
+      background: var(--color-primary);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: var(--radius-full);
+    }
+
+    .catalog-card-badge.popular { background: #FF9F43; }
+    .catalog-card-badge.nuevo { background: #06D6A0; }
+    .catalog-card-badge.premium { background: #8B5CF6; }
+
+    .catalog-card-category {
+      position: absolute;
+      top: var(--space-md);
+      right: var(--space-md);
+      padding: var(--space-xs) var(--space-sm);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      backdrop-filter: blur(4px);
+    }
+
+    .catalog-card-content {
+      padding: var(--space-lg);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .catalog-card-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: var(--space-sm);
+    }
+
+    .catalog-card-title a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    .catalog-card-title a:hover {
+      color: var(--color-primary);
+    }
+
+    .catalog-card-description {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: var(--space-lg);
+      flex: 1;
+    }
+
+    .catalog-card-specs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-sm);
+      margin-bottom: var(--space-lg);
+    }
+
+    .catalog-card-spec {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+
+    .catalog-card-spec-icon {
+      font-size: 1rem;
+    }
+
+    .catalog-card-actions {
+      display: flex;
+      gap: var(--space-sm);
+    }
+
+    .catalog-card-btn {
+      flex: 1;
+      padding: var(--space-md);
+      border-radius: var(--radius-lg);
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .catalog-card-btn.primary {
+      background: var(--color-primary);
+      color: white;
+      border: none;
+    }
+
+    .catalog-card-btn.primary:hover {
+      background: var(--color-primary-dark);
+    }
+
+    .catalog-card-btn.secondary {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+    }
+
+    .catalog-card-btn.secondary:hover {
+      background: rgba(255, 18, 204, 0.1);
+    }
+
+    /* Empty State */
+    .catalog-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: var(--space-4xl) var(--space-xl);
+    }
+
+    .catalog-empty-icon {
+      font-size: 4rem;
+      margin-bottom: var(--space-lg);
+      opacity: 0.5;
+    }
+
+    .catalog-empty-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--color-text);
+      margin-bottom: var(--space-sm);
+    }
+
+    .catalog-empty-text {
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-xl);
+    }
+
+    /* Mobile Toggle */
+    .sidebar-toggle {
+      display: none;
+      position: fixed;
+      bottom: var(--space-xl);
+      left: 50%;
+      transform: translateX(-50%);
+      padding: var(--space-md) var(--space-xl);
+      background: var(--color-primary);
+      color: white;
+      border: none;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      z-index: 100;
+      box-shadow: var(--shadow-xl);
+    }
+
+    .sidebar-toggle:hover {
+      background: var(--color-primary-dark);
+    }
+
+    /* Sidebar Overlay (Mobile) */
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      opacity: 0;
+      transition: opacity var(--transition-base);
+    }
+
+    .sidebar-overlay.active {
+      opacity: 1;
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 1024px) {
+      .catalog-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .catalog-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        border-radius: 0;
+        z-index: 1000;
+        transform: translateX(-100%);
+        transition: transform var(--transition-base);
+      }
+
+      .catalog-sidebar.active {
+        transform: translateX(0);
+      }
+
+      .sidebar-toggle {
+        display: flex;
+        align-items: center;
+        gap: var(--space-sm);
+      }
+
+      .sidebar-overlay {
+        display: block;
+      }
+
+      .sidebar-close {
+        display: block;
+        position: absolute;
+        top: var(--space-md);
+        right: var(--space-md);
+        width: 40px;
+        height: 40px;
+        background: var(--color-border);
+        border: none;
+        border-radius: var(--radius-full);
+        font-size: 1.25rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .catalog-hero {
+        padding: var(--space-2xl) 0;
+      }
+
+      .catalog-hero-title {
+        font-size: 1.75rem;
+      }
+
+      .catalog-toolbar {
+        flex-direction: column;
+        gap: var(--space-md);
+        align-items: flex-start;
+      }
+
+      .catalog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .catalog-card-actions {
+        flex-direction: column;
+      }
+    }
+
+    /* Sidebar Close Button (hidden on desktop) */
+    .sidebar-close {
+      display: none;
+    }
+
+    @media (max-width: 1024px) {
+      .sidebar-close {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-component="header"></div>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Inicio</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <li class="separator">›</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span class="current" itemprop="name">Catalogo de Inflables</span>
+          <meta itemprop="position" content="2">
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero Catalogo -->
+  <section class="hero-catalogo">
+    <div class="container">
+      <div class="hero-catalogo-grid">
+        <!-- Columna Izquierda -->
+        <div class="hero-catalogo-left">
+          <span class="hero-catalogo-badge">
+            Encuentra el Inflable Perfecto
+          </span>
+
+          <h1 class="hero-catalogo-title">
+            Catalogo de <span class="text-gradient">Inflables para Fiestas</span>
+          </h1>
+
+          <p class="hero-catalogo-subtitle">
+            Explora nuestra <strong>coleccion completa</strong> de inflables para fiestas y eventos en CDMX.
+            Usa los filtros para encontrar el <strong>tamaño ideal</strong> segun tu espacio, la edad de los
+            niños y el tipo de evento que estas organizando.
+          </p>
+
+          <div class="hero-catalogo-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-icon">🎈</span>
+              <span class="hero-stat-value">8+</span>
+              <span class="hero-stat-label">Inflables</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-icon">📏</span>
+              <span class="hero-stat-value">3 Tamaños</span>
+              <span class="hero-stat-label">Disponibles</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-icon">🚚</span>
+              <span class="hero-stat-value">Gratis</span>
+              <span class="hero-stat-label">Entrega CDMX</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/525531281706?text=Hola!%20Quiero%20cotizar%20un%20inflable%20para%20mi%20fiesta%20🎉"
+             class="btn btn-whatsapp"
+             target="_blank"
+             rel="noopener">
+            WHATSAPP
+          </a>
+        </div>
+
+        <!-- Columna Derecha -->
+        <div class="hero-catalogo-right">
+          <div class="hero-catalogo-card">
+            <h2 class="hero-card-title">Tu Fiesta Perfecta Empieza Aqui</h2>
+            <p class="hero-card-text">
+              Ya sea que tengas un <strong>departamento pequeño</strong>, un <strong>patio mediano</strong>
+              o un <strong>jardin enorme</strong>, tenemos el inflable ideal para ti. Nuestro catalogo
+              esta organizado por tamaños para que encuentres exactamente lo que necesitas.
+            </p>
+            <p class="hero-card-text">
+              Todos nuestros inflables incluyen <strong>entrega, instalación profesional y sanitizacion</strong>
+              antes de cada evento. Solo elige, cotiza por WhatsApp y nosotros nos encargamos del resto.
+              <strong>Cero estres, pura fiesta</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Main -->
+  <div class="catalog-container">
+    <div class="catalog-layout">
+
+      <!-- Sidebar -->
+      <aside class="catalog-sidebar" id="catalogSidebar">
+        <button class="sidebar-close" id="sidebarClose" aria-label="Cerrar filtros">✕</button>
+
+        <div class="sidebar-header">
+          <h2 class="sidebar-title">
+            <span>🎯</span> Filtros
+          </h2>
+          <button class="sidebar-reset" id="resetFilters">Limpiar</button>
+        </div>
+
+        <!-- Filtro por Categoria -->
+        <div class="filter-group">
+          <h3 class="filter-group-title">Categoria</h3>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="todos">
+              <span class="filter-btn-icon all">🎈</span>
+              <span class="filter-btn-text">
+                <span class="filter-btn-label">Todos</span>
+                <span class="filter-btn-count">8 inflables</span>
+              </span>
+            </button>
+            <button class="filter-btn" data-filter="chico">
+              <span class="filter-btn-icon chico">👶</span>
+              <span class="filter-btn-text">
+                <span class="filter-btn-label">Chicos</span>
+                <span class="filter-btn-count">1 inflable</span>
+              </span>
+            </button>
+            <button class="filter-btn" data-filter="mediano">
+              <span class="filter-btn-icon mediano">🏠</span>
+              <span class="filter-btn-text">
+                <span class="filter-btn-label">Mediaños</span>
+                <span class="filter-btn-count">4 inflables</span>
+              </span>
+            </button>
+            <button class="filter-btn" data-filter="grande">
+              <span class="filter-btn-icon grande">🏟️</span>
+              <span class="filter-btn-text">
+                <span class="filter-btn-label">Grandes</span>
+                <span class="filter-btn-count">3 inflables</span>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Filtro por Edad -->
+        <div class="filter-group">
+          <h3 class="filter-group-title">Edad Recomendada</h3>
+          <div class="filter-checkboxes">
+            <label class="filter-checkbox">
+              <input type="checkbox" name="edad" value="1-3" checked>
+              <span class="filter-checkbox-label">1-3 años (Bebes)</span>
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="edad" value="4-7" checked>
+              <span class="filter-checkbox-label">4-7 años</span>
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="edad" value="8-12" checked>
+              <span class="filter-checkbox-label">8-12 años</span>
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="edad" value="todas" checked>
+              <span class="filter-checkbox-label">Todas las edades</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filtro por Caracteristicas -->
+        <div class="filter-group">
+          <h3 class="filter-group-title">Caracteristicas</h3>
+          <div class="filter-checkboxes">
+            <label class="filter-checkbox">
+              <input type="checkbox" name="feature" value="tobogán">
+              <span class="filter-checkbox-label">Con tobogán</span>
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="feature" value="obstáculos">
+              <span class="filter-checkbox-label">Con obstáculos</span>
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="feature" value="tematico">
+              <span class="filter-checkbox-label">Tematico</span>
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="feature" value="interior">
+              <span class="filter-checkbox-label">Para interiores</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filtro por Capacidad -->
+        <div class="filter-group">
+          <h3 class="filter-group-title">Capacidad Minima</h3>
+          <div class="filter-range">
+            <div class="filter-range-header">
+              <span class="filter-range-label">Ninos simultaneos</span>
+              <span class="filter-range-value" id="capacityValue">3+</span>
+            </div>
+            <input type="range" min="3" max="15" value="3" id="capacityRange">
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="sidebar-cta">
+          <p class="sidebar-cta-text">¿No encuentras lo que buscas?</p>
+          <a href="https://wa.me/525531281706?text=Hola!%20Necesito%20ayuda%20para%20encontrar%20un%20inflable"
+             class="sidebar-cta-btn" target="_blank" rel="noopener">
+            <span>💬</span> Preguntaños
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="catalog-main">
+        <!-- Toolbar -->
+        <div class="catalog-toolbar">
+          <p class="catalog-results">
+            Mostrando <strong id="resultsCount">8</strong> inflables
+          </p>
+          <div class="catalog-sort">
+            <span class="catalog-sort-label">Ordenar por:</span>
+            <select class="catalog-sort-select" id="sortSelect">
+              <option value="popular">Mas populares</option>
+              <option value="nombre">Nombre A-Z</option>
+              <option value="capacidad">Mayor capacidad</option>
+              <option value="tamaño">Tamaño</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="catalog-grid" id="catalogGrid">
+
+          <!-- Mini Castillo -->
+          <article class="catalog-card" data-category="chico" data-edad="1-3" data-features="interior" data-capacity="4">
+            <a href="/inflables-chicos/inflable-para-fiestas-infantiles-mini-castillo.html" class="catalog-card-image-link">
+              <div class="catalog-card-image">
+                <img src="/img/img-renta-de-inflables/mini-castillo.webp"
+                     alt="Mini Castillo - Inflable chico para fiestas infantiles"
+                     class="catalog-card-img"
+                     width="400"
+                     height="250"
+                     loading="lazy">
+                <span class="catalog-card-badge">Favorito</span>
+                <span class="catalog-card-category">Chico</span>
+              </div>
+            </a>
+            <div class="catalog-card-content">
+              <h3 class="catalog-card-title">
+                <a href="/inflables-chicos/inflable-para-fiestas-infantiles-mini-castillo.html" title="Ver Mini Castillo - Inflable para Fiestas Infantiles">Mini Castillo</a>
+              </h3>
+              <p class="catalog-card-description">
+                El primer parque de diversiónes privado de tu bebe. Diseñado exclusivamente para toddlers de 1 a 3 años, este castillo inflable transforma cualquier rincon de tu departamento en una zona de juegos mágica. Perfecto para primeros cumpleaños en espacios reducidos de CDMX.
+              </p>
+              <div class="catalog-card-specs">
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">📏</span> 2x2m
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">👶</span> 1-3 años
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">👥</span> 3-4 niños
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🏠</span> Interiores
+                </span>
+              </div>
+              <div class="catalog-card-actions">
+                <a href="/inflables-chicos/inflable-para-fiestas-infantiles-mini-castillo.html" class="catalog-card-btn primary">
+                  Mini Castillo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dragones Rojos -->
+          <article class="catalog-card" data-category="mediano" data-edad="4-7,8-12" data-features="tematico" data-capacity="7">
+            <a href="/inflables-medianos/inflable-para-fiestas-infantiles-dragones-rojos.html" class="catalog-card-image-link">
+              <div class="catalog-card-image">
+                <img src="/img/img-renta-de-inflables/dragones-rojos.webp"
+                     alt="Dragones Rojos - Inflable mediano para fiestas infantiles"
+                     class="catalog-card-img"
+                     width="400"
+                     height="250"
+                     loading="lazy">
+                <span class="catalog-card-badge popular">Popular</span>
+                <span class="catalog-card-category">Mediano</span>
+              </div>
+            </a>
+            <div class="catalog-card-content">
+              <h3 class="catalog-card-title">
+                <a href="/inflables-medianos/inflable-para-fiestas-infantiles-dragones-rojos.html" title="Ver Dragones Rojos - Inflable para Fiestas Infantiles">Dragones Rojos</a>
+              </h3>
+              <p class="catalog-card-description">
+                El inflable más rentado de todo CDMX! Dos dragones de 3 metros de altura custodiando una arena de batalla épica. Los niños se sienten como verdaderos guerreros conquistando el castillo. Perfecto para fiestas de niños aventureros que quieren acción y diversión sin parar.
+              </p>
+              <div class="catalog-card-specs">
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">📏</span> 4x4m
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🧒</span> 4-12 años
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">👥</span> 5-7 niños
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🔥</span> Épico
+                </span>
+              </div>
+              <div class="catalog-card-actions">
+                <a href="/inflables-medianos/inflable-para-fiestas-infantiles-dragones-rojos.html" class="catalog-card-btn primary">
+                  Dragones Rojos
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mini Jungla -->
+          <article class="catalog-card" data-category="mediano" data-edad="4-7,8-12" data-features="tematico,obstáculos" data-capacity="7">
+            <a href="/inflables-medianos/inflable-para-fiestas-infantiles-mini-jungla.html" class="catalog-card-image-link">
+              <div class="catalog-card-image">
+                <img src="/img/img-renta-de-inflables/mini-jungla.webp"
+                     alt="Mini Jungla - Inflable mediano para fiestas infantiles"
+                     class="catalog-card-img"
+                     width="400"
+                     height="250"
+                     loading="lazy">
+                <span class="catalog-card-category">Mediano</span>
+              </div>
+            </a>
+            <div class="catalog-card-content">
+              <h3 class="catalog-card-title">
+                <a href="/inflables-medianos/inflable-para-fiestas-infantiles-mini-jungla.html" title="Ver Mini Jungla - Inflable para Fiestas Infantiles">Mini Jungla</a>
+              </h3>
+              <p class="catalog-card-description">
+                Expedicion salvaje con lianas, obstáculos y zonas de descubrimiento. Renta de inflable con temática de jungla ideal para pequeños exploradores de 5 a 10 años que aman las aventuras. Perfecto para fiestas infantiles en patios mediaños de CDMX y Estado de México.
+              </p>
+              <div class="catalog-card-specs">
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">📏</span> 4.5x4m
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🧒</span> 5-10 años
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">👥</span> 5-7 niños
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🌿</span> Safari
+                </span>
+              </div>
+              <div class="catalog-card-actions">
+                <a href="/inflables-medianos/inflable-para-fiestas-infantiles-mini-jungla.html" class="catalog-card-btn primary">
+                  Mini Jungla
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gusanitos -->
+          <article class="catalog-card" data-category="mediano" data-edad="todas" data-features="obstáculos" data-capacity="7">
+            <a href="/inflables-medianos/inflable-para-fiestas-infantiles-gusanitos.html" class="catalog-card-image-link">
+              <div class="catalog-card-image">
+                <img src="/img/img-renta-de-inflables/gusanitos.webp"
+                     alt="Gusanitos - Inflable con túneles para fiestas infantiles"
+                     class="catalog-card-img"
+                     width="400"
+                     height="250"
+                     loading="lazy">
+                <span class="catalog-card-category">Mediano</span>
+              </div>
+            </a>
+            <div class="catalog-card-content">
+              <h3 class="catalog-card-title">
+                <a href="/inflables-medianos/inflable-para-fiestas-infantiles-gusanitos.html" title="Ver Gusanitos - Inflable para Fiestas Infantiles">Gusanitos</a>
+              </h3>
+              <p class="catalog-card-description">
+                Renta de inflable con túneles coloridos para explorar. Un circuito de diversión sin fin, el favorito de los niños más inquietos. Con multiples entradas y salidas para jugar al escondite, gatear y descubrir. Disponible para fiestas en toda la CDMX y área metropolitana.
+              </p>
+              <div class="catalog-card-specs">
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">📏</span> 5x3m
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🧒</span> Todas
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">👥</span> 5-7 niños
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🎪</span> Túneles
+                </span>
+              </div>
+              <div class="catalog-card-actions">
+                <a href="/inflables-medianos/inflable-para-fiestas-infantiles-gusanitos.html" class="catalog-card-btn primary">
+                  Gusanitos
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Castillo de Princesas -->
+          <article class="catalog-card" data-category="mediano" data-edad="4-7,8-12" data-features="tematico,tobogán" data-capacity="7">
+            <a href="/inflables-medianos/inflable-para-fiestas-infantiles-castillo-de-princesas.html" class="catalog-card-image-link">
+              <div class="catalog-card-image">
+                <img src="/img/img-renta-de-inflables/castillo-de-princesas.webp"
+                     alt="Castillo de Princesas - Inflable tematico para fiestas infantiles"
+                     class="catalog-card-img"
+                     width="400"
+                     height="250"
+                     loading="lazy">
+                <span class="catalog-card-badge nuevo">Princesas</span>
+                <span class="catalog-card-category">Mediano</span>
+              </div>
+            </a>
+            <div class="catalog-card-content">
+              <h3 class="catalog-card-title">
+                <a href="/inflables-medianos/inflable-para-fiestas-infantiles-castillo-de-princesas.html" title="Ver Castillo de Princesas - Inflable para Fiestas Infantiles">Castillo de Princesas</a>
+              </h3>
+              <p class="catalog-card-description">
+                Renta de castillo inflable para niñas con temática de princesas. Un reino mágico en tonos rosa y pastel con resbaladilla incluida. Perfecto para cumpleaños de niñas, fotos espectaculares y crear recuerdos de cuento de hadas. Disponible en CDMX y Estado de México.
+              </p>
+              <div class="catalog-card-specs">
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">📏</span> 4x4m
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">👧</span> 3-10 años
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">👥</span> 5-7 niños
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🛝</span> Resbaladilla
+                </span>
+              </div>
+              <div class="catalog-card-actions">
+                <a href="/inflables-medianos/inflable-para-fiestas-infantiles-castillo-de-princesas.html" class="catalog-card-btn primary">
+                  Castillo de Princesas
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Barco Pirata -->
+          <article class="catalog-card" data-category="grande" data-edad="4-7,8-12,todas" data-features="tobogán,tematico" data-capacity="10">
+            <a href="/inflables-grandes/inflable-para-fiestas-infantiles-barco-pirata.html" class="catalog-card-image-link">
+              <div class="catalog-card-image">
+                <img src="/img/img-renta-de-inflables/barco-pirata.webp"
+                     alt="Barco Pirata - Inflable grande para fiestas y eventos"
+                     class="catalog-card-img"
+                     width="400"
+                     height="250"
+                     loading="lazy">
+                <span class="catalog-card-badge premium">Épico</span>
+                <span class="catalog-card-category">Grande</span>
+              </div>
+            </a>
+            <div class="catalog-card-content">
+              <h3 class="catalog-card-title">
+                <a href="/inflables-grandes/inflable-para-fiestas-infantiles-barco-pirata.html" title="Ver Barco Pirata - Inflable para Fiestas y Eventos">Barco Pirata</a>
+              </h3>
+              <p class="catalog-card-description">
+                Renta de inflable grande de 7 metros con temática pirata. Aventura en alta mar con timón funcional, cubierta para trepar y tobogán de alta velocidad. El inflable más impresionante para eventos grandes, fiestas patronales y cumpleaños épicos en CDMX.
+              </p>
+              <div class="catalog-card-specs">
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">📏</span> 7x5m
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🧒</span> 4+ años
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">👥</span> 8-10 niños
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🛝</span> Tobogán
+                </span>
+              </div>
+              <div class="catalog-card-actions">
+                <a href="/inflables-grandes/inflable-para-fiestas-infantiles-barco-pirata.html" class="catalog-card-btn primary">
+                  Barco Pirata
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Extremo -->
+          <article class="catalog-card" data-category="grande" data-edad="8-12,todas" data-features="obstáculos" data-capacity="10">
+            <a href="/inflables-grandes/inflable-para-fiestas-infantiles-extremo.html" class="catalog-card-image-link">
+              <div class="catalog-card-image">
+                <img src="/img/img-renta-de-inflables/extremo.webp"
+                     alt="Extremo - Circuito de obstáculos inflable para fiestas"
+                     class="catalog-card-img"
+                     width="400"
+                     height="250"
+                     loading="lazy">
+                <span class="catalog-card-badge premium">Extremo</span>
+                <span class="catalog-card-category">Grande</span>
+              </div>
+            </a>
+            <div class="catalog-card-content">
+              <h3 class="catalog-card-title">
+                <a href="/inflables-grandes/inflable-para-fiestas-infantiles-extremo.html" title="Ver Extremo - Inflable para Fiestas y Eventos">Extremo</a>
+              </h3>
+              <p class="catalog-card-description">
+                Renta de inflable extremo de 7 metros para competencias y eventos corporativos. Circuito completo con muros para escalar, túneles, barreras y resbaladillas de alta velocidad. Ideal para carreras, teambuilding y fiestas llenas de adrenalina en CDMX.
+              </p>
+              <div class="catalog-card-specs">
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">📏</span> 7x4m
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🧒</span> 6+ años
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">👥</span> 6-10 niños
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🏆</span> Carreras
+                </span>
+              </div>
+              <div class="catalog-card-actions">
+                <a href="/inflables-grandes/inflable-para-fiestas-infantiles-extremo.html" class="catalog-card-btn primary">
+                  Extremo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Castillo Blanco -->
+          <article class="catalog-card" data-category="grande" data-edad="todas" data-features="tematico" data-capacity="12">
+            <a href="/inflables-grandes/inflable-para-fiestas-infantiles-castillo-blanco.html" class="catalog-card-image-link">
+              <div class="catalog-card-image">
+                <img src="/img/img-renta-de-inflables/castillo-blanco.webp"
+                     alt="Castillo Blanco - Inflable elegante para bodas y eventos"
+                     class="catalog-card-img"
+                     width="400"
+                     height="250"
+                     loading="lazy">
+                <span class="catalog-card-badge premium">Bodas</span>
+                <span class="catalog-card-category">Grande</span>
+              </div>
+            </a>
+            <div class="catalog-card-content">
+              <h3 class="catalog-card-title">
+                <a href="/inflables-grandes/inflable-para-fiestas-infantiles-castillo-blanco.html" title="Ver Castillo Blanco - Inflable para Bodas y Eventos">Castillo Blanco</a>
+              </h3>
+              <p class="catalog-card-description">
+                Renta de castillo inflable elegante para bodas y eventos formales. 6x5 metros en blanco inmaculado que combina con cualquier decoracion. Perfecto para que los niños disfruten mientras los adultos celebran. El inflable premium para recepciones en CDMX.
+              </p>
+              <div class="catalog-card-specs">
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">📏</span> 6x5m
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">🧒</span> Todas
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">👥</span> 8-12 niños
+                </span>
+                <span class="catalog-card-spec">
+                  <span class="catalog-card-spec-icon">💍</span> Premium
+                </span>
+              </div>
+              <div class="catalog-card-actions">
+                <a href="/inflables-grandes/inflable-para-fiestas-infantiles-castillo-blanco.html" class="catalog-card-btn primary">
+                  Castillo Blanco
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Empty State (hidden by default) -->
+          <div class="catalog-empty" id="catalogEmpty" style="display: none;">
+            <div class="catalog-empty-icon">🔍</div>
+            <h3 class="catalog-empty-title">No encontramos inflables</h3>
+            <p class="catalog-empty-text">Intenta ajustar los filtros o contactaños para ayudarte a encontrar el ideal.</p>
+            <button class="sidebar-cta-btn" onclick="resetAllFilters()">
+              Limpiar filtros
+            </button>
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Mobile Toggle Button -->
+  <button class="sidebar-toggle" id="sidebarToggle">
+    <span>🎯</span> Filtros
+  </button>
+
+  <!-- Mobile Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Footer -->
+  <div data-component="footer"></div>
+
+  <!-- Scripts -->
+  <script src="/js/components.js"></script>
+  <script>
+    // ============================================
+    // CATALOGO - Funcionalidad de Filtros
+    // ============================================
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const sidebar = document.getElementById('catalogSidebar');
+      const sidebarToggle = document.getElementById('sidebarToggle');
+      const sidebarClose = document.getElementById('sidebarClose');
+      const sidebarOverlay = document.getElementById('sidebarOverlay');
+      const catalogGrid = document.getElementById('catalogGrid');
+      const resultsCount = document.getElementById('resultsCount');
+      const catalogEmpty = document.getElementById('catalogEmpty');
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const resetBtn = document.getElementById('resetFilters');
+      const capacityRange = document.getElementById('capacityRange');
+      const capacityValue = document.getElementById('capacityValue');
+      const sortSelect = document.getElementById('sortSelect');
+
+      let currentCategory = 'todos';
+      let currentCapacity = 3;
+
+      // Toggle Sidebar (Mobile)
+      function toggleSidebar() {
+        sidebar.classList.toggle('active');
+        sidebarOverlay.classList.toggle('active');
+        document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+      }
+
+      sidebarToggle?.addEventListener('click', toggleSidebar);
+      sidebarClose?.addEventListener('click', toggleSidebar);
+      sidebarOverlay?.addEventListener('click', toggleSidebar);
+
+      // Category Filter
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          currentCategory = this.dataset.filter;
+          applyFilters();
+
+          // Close sidebar on mobile after selection
+          if (window.innerWidth <= 1024) {
+            toggleSidebar();
+          }
+        });
+      });
+
+      // Capacity Range
+      capacityRange?.addEventListener('input', function() {
+        currentCapacity = parseInt(this.value);
+        capacityValue.textContent = currentCapacity + '+';
+        applyFilters();
+      });
+
+      // Apply Filters
+      function applyFilters() {
+        const cards = catalogGrid.querySelectorAll('.catalog-card');
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const cardCategory = card.dataset.category;
+          const cardCapacity = parseInt(card.dataset.capacity);
+
+          let showCard = true;
+
+          // Category filter
+          if (currentCategory !== 'todos' && cardCategory !== currentCategory) {
+            showCard = false;
+          }
+
+          // Capacity filter
+          if (cardCapacity < currentCapacity) {
+            showCard = false;
+          }
+
+          // Checkbox filters (edad)
+          const checkedEdades = Array.from(document.querySelectorAll('input[name="edad"]:checked'))
+            .map(cb => cb.value);
+
+          if (checkedEdades.length > 0 && checkedEdades.length < 4) {
+            const cardEdades = card.dataset.edad.split(',');
+            const hasMatchingEdad = cardEdades.some(e => checkedEdades.includes(e));
+            if (!hasMatchingEdad) {
+              showCard = false;
+            }
+          }
+
+          // Checkbox filters (features)
+          const checkedFeatures = Array.from(document.querySelectorAll('input[name="feature"]:checked'))
+            .map(cb => cb.value);
+
+          if (checkedFeatures.length > 0) {
+            const cardFeatures = card.dataset.features.split(',');
+            const hasMatchingFeature = checkedFeatures.some(f => cardFeatures.includes(f));
+            if (!hasMatchingFeature) {
+              showCard = false;
+            }
+          }
+
+          // Show/hide card
+          card.style.display = showCard ? '' : 'none';
+          if (showCard) visibleCount++;
+        });
+
+        // Update results count
+        resultsCount.textContent = visibleCount;
+
+        // Show/hide empty state
+        catalogEmpty.style.display = visibleCount === 0 ? '' : 'none';
+      }
+
+      // Checkbox change listeners
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        cb.addEventListener('change', applyFilters);
+      });
+
+      // Reset Filters
+      function resetAllFilters() {
+        currentCategory = 'todos';
+        currentCapacity = 3;
+
+        filterButtons.forEach(b => b.classList.remove('active'));
+        filterButtons[0].classList.add('active');
+
+        capacityRange.value = 3;
+        capacityValue.textContent = '3+';
+
+        document.querySelectorAll('input[name="edad"]').forEach(cb => cb.checked = true);
+        document.querySelectorAll('input[name="feature"]').forEach(cb => cb.checked = false);
+
+        applyFilters();
+      }
+
+      resetBtn?.addEventListener('click', resetAllFilters);
+      window.resetAllFilters = resetAllFilters;
+
+      // Sort functionality
+      sortSelect?.addEventListener('change', function() {
+        const cards = Array.from(catalogGrid.querySelectorAll('.catalog-card'));
+        const sortValue = this.value;
+
+        cards.sort((a, b) => {
+          switch(sortValue) {
+            case 'nombre':
+              return a.querySelector('.catalog-card-title').textContent
+                .localeCompare(b.querySelector('.catalog-card-title').textContent);
+            case 'capacidad':
+              return parseInt(b.dataset.capacity) - parseInt(a.dataset.capacity);
+            case 'tamaño':
+              const sizes = { 'chico': 1, 'mediano': 2, 'grande': 3 };
+              return sizes[b.dataset.category] - sizes[a.dataset.category];
+            default: // popular - keep original order
+              return 0;
+          }
+        });
+
+        // Re-append sorted cards
+        cards.forEach(card => catalogGrid.appendChild(card));
+      });
+
+    });
+  </script>
+</body>
+
+</html>

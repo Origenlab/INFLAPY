@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Principal -->
+  <title>Blog de Inflables | Tips y Guias para Fiestas | INFLAPY</title>
+  <meta name="description" content="Blog INFLAPY: guias y tips para fiestas infantiles. Aprende a elegir el inflable ideal, ideas de cumpleanos y consejos de expertos.">
+  <meta name="keywords" content="blog inflables, tips fiestas infantiles, guia renta inflables, ideas cumpleaños niños, consejos fiestas CDMX">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="INFLAPY - Renta de Inflables">
+  <link rel="canonical" href="https://inflablesparafiestas.com.mx/blog.html">
+
+  <!-- Hreflang para SEO Local -->
+  <link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/blog.html">
+  <link rel="alternate" hreflang="es" href="https://inflablesparafiestas.com.mx/blog.html">
+  <link rel="alternate" hreflang="x-default" href="https://inflablesparafiestas.com.mx/blog.html">
+
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="MX-CMX">
+  <meta name="geo.placename" content="Juarez, Cuauhtemoc, Ciudad de México">
+  <meta name="geo.position" content="19.434208;-99.1513664">
+  <meta name="ICBM" content="19.434208, -99.1513664">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://inflablesparafiestas.com.mx/blog.html">
+  <meta property="og:title" content="Blog de Inflables | Guias y Tips para Fiestas | INFLAPY">
+  <meta property="og:description" content="Guias, consejos y tips para organizar fiestas infantiles perfectas. Aprende todo sobre inflables.">
+  <meta property="og:image" content="https://inflablesparafiestas.com.mx/img/og-blog.jpg">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog de Inflables | INFLAPY">
+  <meta name="twitter:description" content="Tips y guias para fiestas infantiles perfectas.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <meta name="theme-color" content="#ff12cc">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Schema.org - Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog INFLAPY - Guias de Inflables para Fiestas",
+    "description": "Blog con guias, tips y consejos para organizar fiestas infantiles perfectas con inflables en CDMX",
+    "url": "https://inflablesparafiestas.com.mx/blog.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "INFLAPY",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://inflablesparafiestas.com.mx/img/logo-inflapy.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- Schema.org - BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://inflablesparafiestas.com.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://inflablesparafiestas.com.mx/blog.html"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================
+       BLOG - Estilos Especificos
+       ============================================ */
+
+    /* Hero Blog */
+    .hero-blog {
+      background: linear-gradient(135deg, var(--color-dark) 0%, #1a0a20 50%, var(--color-dark) 100%);
+      padding: var(--space-4xl) 0 var(--space-3xl);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .hero-blog::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(255, 18, 204, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-blog-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-blog-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      background: rgba(255, 18, 204, 0.15);
+      border: 1px solid rgba(255, 18, 204, 0.3);
+      padding: var(--space-sm) var(--space-lg);
+      border-radius: var(--radius-full);
+      font-size: 0.95rem;
+      color: var(--color-primary);
+      margin-bottom: var(--space-lg);
+    }
+
+    .hero-blog-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      font-weight: 700;
+      color: var(--color-text);
+      line-height: 1.1;
+      margin-bottom: var(--space-lg);
+    }
+
+    .hero-blog-subtitle {
+      font-size: 1.15rem;
+      color: var(--color-text-muted);
+      max-width: 700px;
+      margin: 0 auto var(--space-xl);
+      line-height: 1.7;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: var(--space-md) 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .breadcrumb-list {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    .breadcrumb-list a {
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .breadcrumb-list a:hover {
+      color: var(--color-primary);
+    }
+
+    .breadcrumb-list .separator {
+      color: var(--color-text-muted);
+      opacity: 0.5;
+    }
+
+    .breadcrumb-list .current {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    /* Blog Layout */
+    .blog-layout {
+      display: grid;
+      grid-template-columns: 1fr 350px;
+      gap: var(--space-3xl);
+      padding: var(--space-4xl) 0;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .blog-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+      }
+    }
+
+    /* Blog Main Content */
+    .blog-main {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3xl);
+    }
+
+    /* Featured Post */
+    .blog-featured {
+      background: var(--color-surface);
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      border: 2px solid var(--color-primary);
+      transition: all 0.3s ease;
+    }
+
+    .blog-featured:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(255, 18, 204, 0.2);
+    }
+
+    .blog-featured-image {
+      position: relative;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, rgba(255, 18, 204, 0.2), rgba(139, 92, 246, 0.2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .blog-featured-image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.7) 100%);
+      z-index: 1;
+    }
+
+    .blog-featured-emoji {
+      font-size: 8rem;
+      filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+    }
+
+    .blog-featured-badge {
+      position: absolute;
+      top: var(--space-lg);
+      left: var(--space-lg);
+      background: var(--color-primary);
+      color: white;
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+
+    .blog-featured-content {
+      padding: var(--space-2xl);
+    }
+
+    .blog-featured-meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-md);
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .blog-featured-meta span {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+    }
+
+    .blog-featured-title {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-md);
+      line-height: 1.3;
+    }
+
+    .blog-featured-title a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .blog-featured-title a:hover {
+      color: var(--color-primary);
+    }
+
+    .blog-featured-excerpt {
+      font-size: 1rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      margin-bottom: var(--space-xl);
+    }
+
+    .blog-featured-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      background: var(--color-primary);
+      color: white;
+      padding: var(--space-md) var(--space-xl);
+      border-radius: var(--radius-xl);
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .blog-featured-link:hover {
+      background: var(--color-primary-dark);
+      transform: translateX(5px);
+    }
+
+    /* Blog Posts Grid */
+    .blog-posts-section {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xl);
+    }
+
+    .blog-posts-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+    }
+
+    .blog-posts-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
+    .blog-posts-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-xl);
+    }
+
+    @media (max-width: 768px) {
+      .blog-posts-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Blog Card */
+    .blog-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(255, 18, 204, 0.15);
+    }
+
+    .blog-card-image {
+      position: relative;
+      aspect-ratio: 16/10;
+      background: linear-gradient(135deg, rgba(255, 18, 204, 0.1), rgba(139, 92, 246, 0.1));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .blog-card-emoji {
+      font-size: 4rem;
+      transition: transform 0.3s ease;
+    }
+
+    .blog-card:hover .blog-card-emoji {
+      transform: scale(1.1);
+    }
+
+    .blog-card-category {
+      position: absolute;
+      top: var(--space-md);
+      left: var(--space-md);
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: var(--radius-sm);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .blog-card-content {
+      padding: var(--space-lg);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card-meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      margin-bottom: var(--space-sm);
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+
+    .blog-card-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-sm);
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .blog-card-title a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .blog-card-title a:hover {
+      color: var(--color-primary);
+    }
+
+    .blog-card-excerpt {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: var(--space-md);
+    }
+
+    .blog-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      color: var(--color-primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: gap 0.3s ease;
+    }
+
+    .blog-card-link:hover {
+      gap: var(--space-sm);
+    }
+
+    /* ============================================
+       SIDEBAR
+       ============================================ */
+    .blog-sidebar {
+      position: sticky;
+      top: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xl);
+    }
+
+    @media (max-width: 1024px) {
+      .blog-sidebar {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+    }
+
+    /* Sidebar Card Base */
+    .sidebar-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-xl);
+      padding: var(--space-xl);
+      border: 1px solid var(--color-border);
+    }
+
+    .sidebar-card-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-lg);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    /* Sidebar CTA */
+    .sidebar-cta {
+      background: linear-gradient(135deg, rgba(255, 18, 204, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+      border-color: rgba(255, 18, 204, 0.3);
+      text-align: center;
+    }
+
+    .sidebar-cta-emoji {
+      font-size: 3rem;
+      margin-bottom: var(--space-md);
+    }
+
+    .sidebar-cta-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-sm);
+    }
+
+    .sidebar-cta-text {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-lg);
+      line-height: 1.6;
+    }
+
+    .sidebar-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      width: 100%;
+      background: var(--color-primary);
+      color: white;
+      padding: var(--space-md) var(--space-lg);
+      border-radius: var(--radius-xl);
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar-cta-btn:hover {
+      background: var(--color-primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Sidebar Categories */
+    .sidebar-categories {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .sidebar-category-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-md);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar-category-item:hover {
+      border-color: var(--color-primary);
+      background: rgba(255, 18, 204, 0.05);
+    }
+
+    .sidebar-category-info {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .sidebar-category-icon {
+      font-size: 1.2rem;
+    }
+
+    .sidebar-category-name {
+      font-weight: 600;
+      color: var(--color-text);
+      font-size: 0.9rem;
+    }
+
+    .sidebar-category-count {
+      background: var(--color-border);
+      color: var(--color-text-muted);
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    /* Sidebar Popular Posts */
+    .sidebar-posts {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .sidebar-post-item {
+      display: flex;
+      gap: var(--space-md);
+      padding-bottom: var(--space-md);
+      border-bottom: 1px solid var(--color-border);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar-post-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .sidebar-post-item:hover .sidebar-post-title {
+      color: var(--color-primary);
+    }
+
+    .sidebar-post-emoji {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, rgba(255, 18, 204, 0.1), rgba(139, 92, 246, 0.1));
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .sidebar-post-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+
+    .sidebar-post-title {
+      font-weight: 600;
+      color: var(--color-text);
+      font-size: 0.9rem;
+      line-height: 1.4;
+      transition: color 0.3s ease;
+    }
+
+    .sidebar-post-date {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Sidebar Products */
+    .sidebar-products {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .sidebar-product-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      padding: var(--space-md);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar-product-item:hover {
+      border-color: var(--color-primary);
+      background: rgba(255, 18, 204, 0.05);
+    }
+
+    .sidebar-product-emoji {
+      font-size: 2rem;
+    }
+
+    .sidebar-product-info {
+      flex: 1;
+    }
+
+    .sidebar-product-name {
+      font-weight: 700;
+      color: var(--color-text);
+      font-size: 0.95rem;
+      margin-bottom: var(--space-xs);
+    }
+
+    .sidebar-product-specs {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+
+    .sidebar-product-arrow {
+      color: var(--color-primary);
+      font-weight: 700;
+      transition: transform 0.3s ease;
+    }
+
+    .sidebar-product-item:hover .sidebar-product-arrow {
+      transform: translateX(4px);
+    }
+
+    /* Sidebar Newsletter */
+    .sidebar-newsletter {
+      background: linear-gradient(135deg, var(--color-dark) 0%, #1a0a20 100%);
+      border-color: var(--color-primary);
+    }
+
+    .sidebar-newsletter-text {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-lg);
+      line-height: 1.6;
+    }
+
+    .sidebar-newsletter-form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .sidebar-newsletter-input {
+      padding: var(--space-md);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      font-size: 0.95rem;
+      color: var(--color-text);
+      font-family: var(--font-body);
+    }
+
+    .sidebar-newsletter-input:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+
+    .sidebar-newsletter-input::placeholder {
+      color: var(--color-text-muted);
+    }
+
+    .sidebar-newsletter-btn {
+      padding: var(--space-md);
+      background: var(--color-primary);
+      color: white;
+      border: none;
+      border-radius: var(--radius-lg);
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar-newsletter-btn:hover {
+      background: var(--color-primary-dark);
+    }
+
+    /* Sidebar Social */
+    .sidebar-social {
+      display: flex;
+      gap: var(--space-sm);
+      flex-wrap: wrap;
+    }
+
+    .sidebar-social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar-social-link:hover {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      transform: translateY(-3px);
+    }
+
+    /* Pagination */
+    .blog-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      margin-top: var(--space-xl);
+    }
+
+    .blog-pagination-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 45px;
+      height: 45px;
+      padding: 0 var(--space-md);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      color: var(--color-text);
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .blog-pagination-btn:hover,
+    .blog-pagination-btn.active {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: white;
+    }
+
+    .blog-pagination-btn.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    /* Tags Cloud */
+    .sidebar-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+    }
+
+    .sidebar-tag {
+      padding: var(--space-xs) var(--space-md);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar-tag:hover {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-component="header"></div>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Inicio</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <li class="separator">›</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span class="current" itemprop="name">Blog</span>
+          <meta itemprop="position" content="2">
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero Blog -->
+  <section class="hero-blog">
+    <div class="container">
+      <div class="hero-blog-content">
+        <span class="hero-blog-badge">Blog INFLAPY</span>
+        <h1 class="hero-blog-title">
+          Guias y Tips para <span class="text-gradient">Fiestas Perfectas</span>
+        </h1>
+        <p class="hero-blog-subtitle">
+          Todo lo que necesitas saber sobre <strong>inflables para fiestas</strong>, consejos para organizar
+          eventos infantiles, ideas creativas y mucho más. Aprende de los expertos en CDMX.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Content -->
+  <div class="container">
+    <div class="blog-layout">
+
+      <!-- Main Content -->
+      <main class="blog-main">
+
+        <!-- Featured Post -->
+        <article class="blog-featured" itemscope itemtype="https://schema.org/BlogPosting">
+          <a href="/blog/cuanto-cuesta-rentar-inflable-cdmx.html" class="blog-featured-image-link">
+            <div class="blog-featured-image">
+              <img src="/img/img-renta-de-inflables/dragones-rojos.webp"
+                   alt="Guía completa para rentar inflables en CDMX"
+                   class="blog-featured-img"
+                   width="800"
+                   height="450"
+                   loading="lazy">
+              <span class="blog-featured-badge">Destacado</span>
+            </div>
+          </a>
+          <div class="blog-featured-content">
+            <div class="blog-featured-meta">
+              <span><span>⏱️</span> 8 min lectura</span>
+              <span><span>📁</span> Guias</span>
+              <span><span>🏆</span> +30 años de experiencia</span>
+            </div>
+            <h2 class="blog-featured-title" itemprop="headline">
+              <a href="/blog/cuanto-cuesta-rentar-inflable-cdmx.html">Guia Completa para Rentar un Inflable en CDMX: Todo lo que Necesitas Saber</a>
+            </h2>
+            <p class="blog-featured-excerpt" itemprop="description">
+              Todo lo que debes saber antes de rentar un inflable en la Ciudad de México. Te explicamos que incluye cada renta,
+              como elegir el tamaño adecuado y que preguntar antes de contratar. Con más de 30 años de experiencia te asesoramos.
+            </p>
+            <a href="/blog/cuanto-cuesta-rentar-inflable-cdmx.html" class="blog-featured-link">
+              Leer articulo completo <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Posts Grid -->
+        <section class="blog-posts-section">
+          <div class="blog-posts-header">
+            <h2 class="blog-posts-title">Articulos Recientes</h2>
+          </div>
+
+          <div class="blog-posts-grid">
+
+            <!-- Post 1 -->
+            <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+              <a href="/blog/como-elegir-inflable-perfecto.html" class="blog-card-image-link">
+                <div class="blog-card-image">
+                  <img src="/img/img-renta-de-inflables/castillo-de-princesas.webp"
+                       alt="Cómo elegir el inflable perfecto"
+                       class="blog-card-img"
+                       width="400"
+                       height="250"
+                       loading="lazy">
+                  <span class="blog-card-category">Guias</span>
+                </div>
+              </a>
+              <div class="blog-card-content">
+                <div class="blog-card-meta">
+                  <span>⏱️ 6 min</span>
+                  <span>📚 Guias</span>
+                </div>
+                <h3 class="blog-card-title" itemprop="headline">
+                  <a href="/blog/como-elegir-inflable-perfecto.html">Como Elegir el Inflable Perfecto para tu Fiesta</a>
+                </h3>
+                <p class="blog-card-excerpt">
+                  Guia paso a paso para elegir el inflable ideal segun el espacio, edad de los niños y tipo de evento.
+                </p>
+                <a href="/blog/como-elegir-inflable-perfecto.html" class="blog-card-link">
+                  Leer más <span>→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+              <a href="/blog/ideas-fiestas-infantiles-cdmx.html" class="blog-card-image-link">
+                <div class="blog-card-image">
+                  <img src="/img/img-renta-de-inflables/barco-pirata.webp"
+                       alt="Ideas creativas para fiestas infantiles"
+                       class="blog-card-img"
+                       width="400"
+                       height="250"
+                       loading="lazy">
+                  <span class="blog-card-category">Ideas</span>
+                </div>
+              </a>
+              <div class="blog-card-content">
+                <div class="blog-card-meta">
+                  <span>⏱️ 5 min</span>
+                  <span>🎨 Ideas</span>
+                </div>
+                <h3 class="blog-card-title" itemprop="headline">
+                  <a href="/blog/ideas-fiestas-infantiles-cdmx.html">10 Ideas Creativas para Fiestas Infantiles en CDMX</a>
+                </h3>
+                <p class="blog-card-excerpt">
+                  Las mejores ideas para hacer la fiesta de cumpleaños de tu hijo inolvidable sin gastar de más.
+                </p>
+                <a href="/blog/ideas-fiestas-infantiles-cdmx.html" class="blog-card-link">
+                  Leer más <span>→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Post 3 - Servicios INFLAPY -->
+            <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+              <a href="/blog/servicios-renta-inflables-cdmx-edomex.html" class="blog-card-image-link">
+                <div class="blog-card-image">
+                  <img src="/img/img-renta-de-inflables/extremo.webp"
+                       alt="Servicios de renta de inflables CDMX"
+                       class="blog-card-img"
+                       width="400"
+                       height="250"
+                       loading="lazy">
+                  <span class="blog-card-category">Servicios</span>
+                </div>
+              </a>
+              <div class="blog-card-content">
+                <div class="blog-card-meta">
+                  <span>⏱️ 10 min</span>
+                  <span>🏢 Servicios</span>
+                </div>
+                <h3 class="blog-card-title" itemprop="headline">
+                  <a href="/blog/servicios-renta-inflables-cdmx-edomex.html">Servicios de Renta de Inflables en CDMX y Estado de México</a>
+                </h3>
+                <p class="blog-card-excerpt">
+                  Conoce todos nuestros servicios con cobertura en Polanco, Interlomas, Santa Fe, Pedregal y toda la CDMX.
+                </p>
+                <a href="/blog/servicios-renta-inflables-cdmx-edomex.html" class="blog-card-link">
+                  Leer más <span>→</span>
+                </a>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Pagination - Solo página 1 disponible actualmente -->
+          <nav class="blog-pagination" aria-label="Paginacion del blog">
+            <span class="blog-pagination-btn disabled" aria-disabled="true">← Anterior</span>
+            <span class="blog-pagination-btn active" aria-current="page">1</span>
+            <span class="blog-pagination-btn disabled" aria-disabled="true">Siguiente →</span>
+          </nav>
+        </section>
+
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+
+        <!-- CTA Cotizar -->
+        <div class="sidebar-card sidebar-cta">
+          <div class="sidebar-cta-emoji">🎈</div>
+          <h3 class="sidebar-cta-title">Cotiza tu Inflable</h3>
+          <p class="sidebar-cta-text">
+            Recibe cotización gratis en menos de 1 hora. Entrega e instalación incluida en CDMX.
+          </p>
+          <a href="https://wa.me/525531281706?text=Hola!%20Quiero%20cotizar%20un%20inflable%20para%20mi%20fiesta"
+             class="btn btn-whatsapp"
+             target="_blank"
+             rel="noopener">
+            WHATSAPP
+          </a>
+        </div>
+
+        <!-- Categories -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <span>📁</span> Categorias
+          </h3>
+          <div class="sidebar-categories">
+            <a href="/blog.html?cat=guias" class="sidebar-category-item">
+              <div class="sidebar-category-info">
+                <span class="sidebar-category-icon">📚</span>
+                <span class="sidebar-category-name">Guias</span>
+              </div>
+              <span class="sidebar-category-count">4</span>
+            </a>
+            <a href="/blog.html?cat=tips" class="sidebar-category-item">
+              <div class="sidebar-category-info">
+                <span class="sidebar-category-icon">💡</span>
+                <span class="sidebar-category-name">Tips y Consejos</span>
+              </div>
+              <span class="sidebar-category-count">3</span>
+            </a>
+            <a href="/blog.html?cat=ideas" class="sidebar-category-item">
+              <div class="sidebar-category-info">
+                <span class="sidebar-category-icon">🎨</span>
+                <span class="sidebar-category-name">Ideas Creativas</span>
+              </div>
+              <span class="sidebar-category-count">2</span>
+            </a>
+            <a href="/blog.html?cat=seguridad" class="sidebar-category-item">
+              <div class="sidebar-category-info">
+                <span class="sidebar-category-icon">🛡️</span>
+                <span class="sidebar-category-name">Seguridad</span>
+              </div>
+              <span class="sidebar-category-count">2</span>
+            </a>
+            <a href="/blog.html?cat=servicios" class="sidebar-category-item">
+              <div class="sidebar-category-info">
+                <span class="sidebar-category-icon">🏢</span>
+                <span class="sidebar-category-name">Servicios</span>
+              </div>
+              <span class="sidebar-category-count">1</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Popular Posts -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <span>🔥</span> Mas Leidos
+          </h3>
+          <div class="sidebar-posts">
+            <a href="/blog/cuanto-cuesta-rentar-inflable-cdmx.html" class="sidebar-post-item">
+              <div class="sidebar-post-emoji">📋</div>
+              <div class="sidebar-post-info">
+                <span class="sidebar-post-title">Guia Completa para Rentar Inflables</span>
+                <span class="sidebar-post-date">Guias</span>
+              </div>
+            </a>
+            <a href="/blog/como-elegir-inflable-perfecto.html" class="sidebar-post-item">
+              <div class="sidebar-post-emoji">🎯</div>
+              <div class="sidebar-post-info">
+                <span class="sidebar-post-title">Como Elegir el Inflable Perfecto</span>
+                <span class="sidebar-post-date">Guias</span>
+              </div>
+            </a>
+            <a href="/blog/ideas-fiestas-infantiles-cdmx.html" class="sidebar-post-item">
+              <div class="sidebar-post-emoji">🎉</div>
+              <div class="sidebar-post-info">
+                <span class="sidebar-post-title">10 Ideas para Fiestas Infantiles</span>
+                <span class="sidebar-post-date">Ideas</span>
+              </div>
+            </a>
+            <a href="/blog/servicios-renta-inflables-cdmx-edomex.html" class="sidebar-post-item">
+              <div class="sidebar-post-emoji">🎪</div>
+              <div class="sidebar-post-info">
+                <span class="sidebar-post-title">Servicios INFLAPY en CDMX y Edomex</span>
+                <span class="sidebar-post-date">Servicios</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Featured Products -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <span>⭐</span> Inflables Populares
+          </h3>
+          <div class="sidebar-products">
+            <a href="/inflables-medianos/inflable-para-fiestas-infantiles-dragones-rojos.html" class="sidebar-product-item">
+              <span class="sidebar-product-emoji">🐉</span>
+              <div class="sidebar-product-info">
+                <div class="sidebar-product-name">Dragones Rojos</div>
+                <div class="sidebar-product-specs">4x4m · El más popular</div>
+              </div>
+              <span class="sidebar-product-arrow">→</span>
+            </a>
+            <a href="/inflables-chicos/inflable-para-fiestas-infantiles-mini-castillo.html" class="sidebar-product-item">
+              <span class="sidebar-product-emoji">🏰</span>
+              <div class="sidebar-product-info">
+                <div class="sidebar-product-name">Mini Castillo</div>
+                <div class="sidebar-product-specs">2x2m · Ideal bebes</div>
+              </div>
+              <span class="sidebar-product-arrow">→</span>
+            </a>
+            <a href="/inflables-grandes/inflable-para-fiestas-infantiles-barco-pirata.html" class="sidebar-product-item">
+              <span class="sidebar-product-emoji">🏴‍☠️</span>
+              <div class="sidebar-product-info">
+                <div class="sidebar-product-name">Barco Pirata</div>
+                <div class="sidebar-product-specs">7x5m · Con tobogán</div>
+              </div>
+              <span class="sidebar-product-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <span>🏷️</span> Etiquetas
+          </h3>
+          <div class="sidebar-tags">
+            <a href="/blog.html?tag=cdmx" class="sidebar-tag">CDMX</a>
+            <a href="/blog.html?tag=guias" class="sidebar-tag">Guias</a>
+            <a href="/blog.html?tag=cumpleaños" class="sidebar-tag">Cumpleaños</a>
+            <a href="/blog.html?tag=bebes" class="sidebar-tag">Bebes</a>
+            <a href="/blog.html?tag=seguridad" class="sidebar-tag">Seguridad</a>
+            <a href="/blog.html?tag=fiestas" class="sidebar-tag">Fiestas</a>
+            <a href="/blog.html?tag=consejos" class="sidebar-tag">Consejos</a>
+            <a href="/blog.html?tag=inflables" class="sidebar-tag">Inflables</a>
+            <a href="/blog.html?tag=eventos" class="sidebar-tag">Eventos</a>
+            <a href="/blog.html?tag=espacios" class="sidebar-tag">Espacios</a>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <span>📱</span> Siguenos
+          </h3>
+          <div class="sidebar-social">
+            <a href="https://wa.me/525531281706" class="sidebar-social-link" target="_blank" rel="noopener" title="WhatsApp">
+              💬
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61560472001646" class="sidebar-social-link" target="_blank" rel="noopener" title="Facebook">
+              📘
+            </a>
+            <a href="https://www.instagram.com/inflablesparafiestascdmx/" class="sidebar-social-link" target="_blank" rel="noopener" title="Instagram">
+              📷
+            </a>
+            <a href="https://www.youtube.com/@inflablesparafiestas" class="sidebar-social-link" target="_blank" rel="noopener" title="YouTube">
+              🎬
+            </a>
+          </div>
+        </div>
+
+        <!-- Zonas -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <span>📍</span> Zonas de Entrega
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: var(--space-md); line-height: 1.6;">
+            Entrega <strong>GRATIS</strong> en toda la CDMX y Estado de México:
+          </p>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">Coyoacan</span>
+            <span class="sidebar-tag">Benito Juarez</span>
+            <span class="sidebar-tag">Miguel Hidalgo</span>
+            <span class="sidebar-tag">Satelite</span>
+            <span class="sidebar-tag">Interlomas</span>
+            <span class="sidebar-tag">Polanco</span>
+            <span class="sidebar-tag">Del Valle</span>
+            <span class="sidebar-tag">Tlalpan</span>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div data-component="footer"></div>
+
+  <!-- Scripts -->
+  <script src="/js/components.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>

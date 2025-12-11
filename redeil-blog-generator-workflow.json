@@ -1,0 +1,238 @@
+{
+  "name": "REDEIL - Generador Automático de Artículos SEO",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 4
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "⏰ Cada 4 Días",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lista de servicios de REDEIL para selección aleatoria\nconst servicios = [\n  {\n    categoria: \"Iluminación LED\",\n    servicio: \"Guirnaldas LED y Luces Vintage\",\n    keywords: [\"guirnaldas led eventos\", \"luces vintage bodas\", \"iluminación decorativa fiestas\", \"renta luces led CDMX\"],\n    descripcion: \"Iluminación decorativa con guirnaldas LED y estilo vintage para crear ambientes mágicos\"\n  },\n  {\n    categoria: \"Iluminación Especial\",\n    servicio: \"Luces Neón y UV Black Light\",\n    keywords: [\"luces neon fiestas\", \"luz negra eventos\", \"iluminación UV CDMX\", \"renta black light\"],\n    descripcion: \"Efectos de luz ultravioleta y neón para fiestas temáticas y eventos únicos\"\n  },\n  {\n    categoria: \"Iluminación Profesional\",\n    servicio: \"Cabezas Móviles e Iluminación Inteligente\",\n    keywords: [\"cabezas móviles renta\", \"iluminación inteligente eventos\", \"moving heads CDMX\", \"luces robotizadas fiestas\"],\n    descripcion: \"Sistemas de iluminación robotizada y programable para espectáculos profesionales\"\n  },\n  {\n    categoria: \"Efectos Láser\",\n    servicio: \"Sistemas de Iluminación Láser\",\n    keywords: [\"renta laser eventos\", \"show laser fiestas\", \"iluminación laser CDMX\", \"efectos laser bodas\"],\n    descripcion: \"Espectaculares efectos láser para shows y eventos de alto impacto\"\n  },\n  {\n    categoria: \"Iluminación Arquitectónica\",\n    servicio: \"Uplighting y Bañadores de Pared\",\n    keywords: [\"uplighting bodas\", \"iluminación arquitectónica eventos\", \"bañadores led renta\", \"ambientación luz CDMX\"],\n    descripcion: \"Iluminación arquitectónica para realzar espacios y crear ambientes elegantes\"\n  },\n  {\n    categoria: \"Audio Profesional\",\n    servicio: \"Sistemas de Sonido JBL y QSC\",\n    keywords: [\"renta sonido profesional\", \"bocinas JBL eventos\", \"audio QSC CDMX\", \"sonido fiestas renta\"],\n    descripcion: \"Equipos de audio profesional de las mejores marcas para eventos de cualquier tamaño\"\n  },\n  {\n    categoria: \"Audio Bodas\",\n    servicio: \"Paquetes de Sonido para Bodas\",\n    keywords: [\"sonido bodas CDMX\", \"renta audio matrimonio\", \"música boda profesional\", \"equipo sonido ceremonia\"],\n    descripcion: \"Paquetes completos de audio diseñados especialmente para ceremonias y recepciones\"\n  },\n  {\n    categoria: \"Audio XV Años\",\n    servicio: \"Sonido para Quinceañeras\",\n    keywords: [\"sonido quinceañera\", \"renta audio XV años\", \"música fiesta 15 años\", \"equipo sonido quinceañera CDMX\"],\n    descripcion: \"Sistemas de audio perfectos para hacer memorable la fiesta de XV años\"\n  },\n  {\n    categoria: \"Efectos Especiales\",\n    servicio: \"Bolas de Disco con LED\",\n    keywords: [\"bola disco renta\", \"esfera disco LED\", \"mirror ball eventos\", \"bola espejos fiesta CDMX\"],\n    descripcion: \"Clásicas bolas de disco con tecnología LED para un toque retro y moderno\"\n  },\n  {\n    categoria: \"Efectos Especiales\",\n    servicio: \"Máquinas de Confeti y Burbujas\",\n    keywords: [\"maquina confeti renta\", \"burbujas eventos CDMX\", \"efectos especiales fiestas\", \"cannon confeti bodas\"],\n    descripcion: \"Efectos especiales con confeti y burbujas para momentos memorables\"\n  },\n  {\n    categoria: \"Efectos Especiales\",\n    servicio: \"Máquinas de Humo y Niebla Baja\",\n    keywords: [\"maquina humo renta\", \"niebla baja bodas\", \"efecto nubes pista baile\", \"fog machine CDMX\"],\n    descripcion: \"Efectos de humo y niebla baja para crear atmósferas cinematográficas\"\n  },\n  {\n    categoria: \"Mobiliario\",\n    servicio: \"Podiums y Pantallas Inflables\",\n    keywords: [\"renta podium eventos\", \"pantalla inflable cine\", \"mobiliario eventos CDMX\", \"equipo presentaciones\"],\n    descripcion: \"Podiums profesionales y pantallas inflables para presentaciones y proyecciones\"\n  }\n];\n\n// Seleccionar servicio aleatorio\nconst servicioSeleccionado = servicios[Math.floor(Math.random() * servicios.length)];\n\n// Generar fecha actual formateada\nconst fecha = new Date();\nconst meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];\nconst fechaFormateada = `${fecha.getDate()} de ${meses[fecha.getMonth()]} de ${fecha.getFullYear()}`;\n\n// Generar slug para URL\nconst slug = servicioSeleccionado.servicio\n  .toLowerCase()\n  .normalize('NFD')\n  .replace(/[\\u0300-\\u036f]/g, '')\n  .replace(/[^a-z0-9]+/g, '-')\n  .replace(/(^-|-$)/g, '');\n\n// Generar nombre de archivo único\nconst timestamp = fecha.getTime();\nconst nombreArchivo = `${slug}-${timestamp}.html`;\n\nreturn {\n  servicio: servicioSeleccionado,\n  fecha: fechaFormateada,\n  timestamp: timestamp,\n  slug: slug,\n  nombreArchivo: nombreArchivo,\n  año: fecha.getFullYear(),\n  mes: meses[fecha.getMonth()]\n};"
+      },
+      "id": "seleccionar-servicio",
+      "name": "🎲 Seleccionar Servicio Aleatorio",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"contents\": [{\n    \"parts\": [{\n      \"text\": \"Eres un experto en marketing digital y SEO para empresas de renta de equipo para eventos en México. Genera un artículo de blog PROFESIONAL y COMPLETO en formato HTML para REDEIL (redeil.com).\\n\\n## SERVICIO A PROMOCIONAR:\\n- Categoría: {{ $json.servicio.categoria }}\\n- Servicio: {{ $json.servicio.servicio }}\\n- Descripción: {{ $json.servicio.descripcion }}\\n- Keywords SEO: {{ $json.servicio.keywords.join(', ') }}\\n\\n## REQUISITOS DEL ARTÍCULO:\\n\\n### Estructura HTML (OBLIGATORIO):\\nGenera SOLO el contenido HTML del artículo (sin <!DOCTYPE>, <html>, <head>, <body>). El HTML debe incluir:\\n\\n1. Un <article> principal con clase 'blog-post'\\n2. Header con:\\n   - <h1> con título atractivo y keyword principal\\n   - <div class='post-meta'> con fecha: {{ $json.fecha }} y categoría\\n   - Imagen destacada placeholder: <img src='/blog/images/{{ $json.slug }}.jpg' alt='[descripción SEO]'>\\n\\n3. Contenido estructurado con:\\n   - Introducción enganchadora (2 párrafos)\\n   - <h2> Sección sobre beneficios (mínimo 4 puntos con <ul>)\\n   - <h2> Sección sobre aplicaciones/usos (con ejemplos reales)\\n   - <h2> Sección '¿Por qué elegir REDEIL?' (diferenciadores)\\n   - <h2> Sección de consejos profesionales\\n   - <h2> Conclusión con call-to-action\\n\\n4. Sidebar con:\\n   - CTA de cotización\\n   - Servicios relacionados\\n   - Datos de contacto\\n\\n### Estilo de Escritura:\\n- Tono profesional pero cercano\\n- Orientado a bodas, XV años, eventos corporativos y fiestas\\n- Mencionar CDMX y área metropolitana\\n- Incluir datos técnicos cuando sea relevante\\n- Usar palabras clave naturalmente (densidad 2-3%)\\n\\n### SEO On-Page:\\n- Título H1 con keyword principal (máx 60 caracteres)\\n- Meta description implícita en primer párrafo\\n- Keywords en H2s\\n- Alt text descriptivo en imágenes\\n- Enlaces internos sugeridos a otros servicios\\n\\n### Longitud:\\n- Mínimo 1200 palabras\\n- Máximo 1800 palabras\\n\\n### CSS Inline (usar estos estilos):\\n- Colores: primary #1d1d1f, accent #0071e3, success #30b952, bg #f5f5f7\\n- Fuentes: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto\\n- Diseño responsive y moderno\\n\\nGENERA ÚNICAMENTE EL CÓDIGO HTML, sin explicaciones ni markdown. El código debe estar listo para insertar en una página.\"\n    }]\n  }],\n  \"generationConfig\": {\n    \"temperature\": 0.8,\n    \"topK\": 40,\n    \"topP\": 0.95,\n    \"maxOutputTokens\": 8192\n  }\n}"
+      },
+      "id": "gemini-generar-articulo",
+      "name": "🤖 Gemini - Generar Artículo",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 300],
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "CREAR_CREDENCIAL",
+          "name": "Google AI API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extraer el contenido HTML generado por Gemini\nconst geminiResponse = $input.first().json;\nlet articuloHTML = '';\n\ntry {\n  // Extraer el texto de la respuesta de Gemini\n  articuloHTML = geminiResponse.candidates[0].content.parts[0].text;\n  \n  // Limpiar posibles backticks de markdown\n  articuloHTML = articuloHTML.replace(/```html\\n?/gi, '').replace(/```\\n?/gi, '');\n  articuloHTML = articuloHTML.trim();\n} catch (error) {\n  throw new Error('Error al procesar respuesta de Gemini: ' + error.message);\n}\n\n// Obtener datos del nodo anterior (servicio seleccionado)\nconst datosServicio = $('🎲 Seleccionar Servicio Aleatorio').first().json;\n\n// Crear el HTML completo de la página\nconst paginaCompleta = `<!DOCTYPE html>\n<html lang=\"es-MX\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"${datosServicio.servicio.descripcion} - REDEIL, expertos en renta de equipo para eventos en CDMX\">\n    <meta name=\"keywords\" content=\"${datosServicio.servicio.keywords.join(', ')}\">\n    <meta name=\"author\" content=\"REDEIL\">\n    <meta name=\"robots\" content=\"index, follow\">\n    <meta property=\"og:title\" content=\"${datosServicio.servicio.servicio} | REDEIL Blog\">\n    <meta property=\"og:description\" content=\"${datosServicio.servicio.descripcion}\">\n    <meta property=\"og:type\" content=\"article\">\n    <meta property=\"og:url\" content=\"https://redeil.com/blog/${datosServicio.nombreArchivo}\">\n    <meta property=\"og:image\" content=\"https://redeil.com/blog/images/${datosServicio.slug}.jpg\">\n    <link rel=\"canonical\" href=\"https://redeil.com/blog/${datosServicio.nombreArchivo}\">\n    <title>${datosServicio.servicio.servicio} | REDEIL - Renta de Equipo para Eventos</title>\n    <style>\n        :root {\n            --primary: #1d1d1f;\n            --accent: #0071e3;\n            --success: #30b952;\n            --bg: #f5f5f7;\n            --white: #ffffff;\n        }\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;\n            line-height: 1.7;\n            color: var(--primary);\n            background: var(--bg);\n        }\n        .container {\n            max-width: 1200px;\n            margin: 0 auto;\n            padding: 0 20px;\n        }\n        header.blog-header {\n            background: var(--primary);\n            padding: 20px 0;\n            position: sticky;\n            top: 0;\n            z-index: 100;\n        }\n        header.blog-header .container {\n            display: flex;\n            justify-content: space-between;\n            align-items: center;\n        }\n        .logo {\n            color: var(--white);\n            font-size: 1.8rem;\n            font-weight: 700;\n            text-decoration: none;\n        }\n        .logo span {\n            color: var(--accent);\n        }\n        nav a {\n            color: var(--white);\n            text-decoration: none;\n            margin-left: 30px;\n            font-weight: 500;\n            transition: color 0.3s;\n        }\n        nav a:hover {\n            color: var(--accent);\n        }\n        main {\n            padding: 60px 0;\n        }\n        .blog-content {\n            display: grid;\n            grid-template-columns: 1fr 350px;\n            gap: 40px;\n        }\n        @media (max-width: 968px) {\n            .blog-content {\n                grid-template-columns: 1fr;\n            }\n        }\n        .blog-post {\n            background: var(--white);\n            border-radius: 20px;\n            overflow: hidden;\n            box-shadow: 0 4px 30px rgba(0,0,0,0.08);\n        }\n        .blog-post img {\n            width: 100%;\n            height: 400px;\n            object-fit: cover;\n        }\n        .post-content {\n            padding: 40px;\n        }\n        .post-meta {\n            display: flex;\n            gap: 20px;\n            margin-bottom: 20px;\n            font-size: 0.9rem;\n            color: #666;\n        }\n        .post-meta .category {\n            background: var(--accent);\n            color: white;\n            padding: 4px 12px;\n            border-radius: 20px;\n            font-weight: 500;\n        }\n        h1 {\n            font-size: 2.5rem;\n            margin-bottom: 30px;\n            line-height: 1.2;\n        }\n        h2 {\n            font-size: 1.6rem;\n            margin: 40px 0 20px;\n            color: var(--primary);\n            border-left: 4px solid var(--accent);\n            padding-left: 15px;\n        }\n        p {\n            margin-bottom: 20px;\n            font-size: 1.1rem;\n        }\n        ul, ol {\n            margin: 20px 0;\n            padding-left: 30px;\n        }\n        li {\n            margin-bottom: 12px;\n            font-size: 1.05rem;\n        }\n        .cta-box {\n            background: linear-gradient(135deg, var(--accent), #005bb5);\n            color: white;\n            padding: 30px;\n            border-radius: 15px;\n            text-align: center;\n            margin: 40px 0;\n        }\n        .cta-box h3 {\n            font-size: 1.5rem;\n            margin-bottom: 15px;\n        }\n        .cta-button {\n            display: inline-block;\n            background: white;\n            color: var(--accent);\n            padding: 15px 40px;\n            border-radius: 30px;\n            text-decoration: none;\n            font-weight: 600;\n            margin-top: 15px;\n            transition: transform 0.3s;\n        }\n        .cta-button:hover {\n            transform: scale(1.05);\n        }\n        .sidebar {\n            position: sticky;\n            top: 100px;\n            height: fit-content;\n        }\n        .sidebar-widget {\n            background: var(--white);\n            border-radius: 20px;\n            padding: 30px;\n            margin-bottom: 30px;\n            box-shadow: 0 4px 20px rgba(0,0,0,0.06);\n        }\n        .sidebar-widget h3 {\n            font-size: 1.2rem;\n            margin-bottom: 20px;\n            padding-bottom: 10px;\n            border-bottom: 2px solid var(--bg);\n        }\n        .contact-info p {\n            font-size: 0.95rem;\n            margin-bottom: 10px;\n        }\n        .contact-info a {\n            color: var(--accent);\n            text-decoration: none;\n        }\n        .related-services a {\n            display: block;\n            padding: 12px 0;\n            color: var(--primary);\n            text-decoration: none;\n            border-bottom: 1px solid var(--bg);\n            transition: color 0.3s;\n        }\n        .related-services a:hover {\n            color: var(--accent);\n        }\n        footer {\n            background: var(--primary);\n            color: var(--white);\n            padding: 40px 0;\n            text-align: center;\n        }\n        footer p {\n            font-size: 0.9rem;\n            opacity: 0.8;\n        }\n    </style>\n    <!-- Schema.org markup para SEO -->\n    <script type=\"application/ld+json\">\n    {\n        \"@context\": \"https://schema.org\",\n        \"@type\": \"Article\",\n        \"headline\": \"${datosServicio.servicio.servicio}\",\n        \"description\": \"${datosServicio.servicio.descripcion}\",\n        \"author\": {\n            \"@type\": \"Organization\",\n            \"name\": \"REDEIL\"\n        },\n        \"publisher\": {\n            \"@type\": \"Organization\",\n            \"name\": \"REDEIL\",\n            \"url\": \"https://redeil.com\"\n        },\n        \"datePublished\": \"${new Date().toISOString()}\",\n        \"dateModified\": \"${new Date().toISOString()}\"\n    }\n    </script>\n</head>\n<body>\n    <header class=\"blog-header\">\n        <div class=\"container\">\n            <a href=\"https://redeil.com\" class=\"logo\">RED<span>EIL</span></a>\n            <nav>\n                <a href=\"https://redeil.com\">Inicio</a>\n                <a href=\"https://redeil.com/#servicios\">Servicios</a>\n                <a href=\"https://redeil.com/blog\">Blog</a>\n                <a href=\"https://redeil.com/#contacto\">Contacto</a>\n            </nav>\n        </div>\n    </header>\n    \n    <main>\n        <div class=\"container\">\n            <div class=\"blog-content\">\n                ${articuloHTML}\n                \n                <aside class=\"sidebar\">\n                    <div class=\"sidebar-widget\">\n                        <h3>📞 ¿Necesitas Cotización?</h3>\n                        <p>Contáctanos para una cotización personalizada sin compromiso.</p>\n                        <a href=\"https://redeil.com/#contacto\" class=\"cta-button\" style=\"display:block; text-align:center; margin-top:15px;\">Solicitar Cotización</a>\n                    </div>\n                    \n                    <div class=\"sidebar-widget related-services\">\n                        <h3>🎯 Servicios Relacionados</h3>\n                        <a href=\"/blog\">Iluminación LED</a>\n                        <a href=\"/blog\">Audio Profesional</a>\n                        <a href=\"/blog\">Efectos Especiales</a>\n                        <a href=\"/blog\">Mobiliario para Eventos</a>\n                    </div>\n                    \n                    <div class=\"sidebar-widget contact-info\">\n                        <h3>📍 Contacto REDEIL</h3>\n                        <p>🌐 <a href=\"https://redeil.com\">redeil.com</a></p>\n                        <p>📧 <a href=\"mailto:contacto@redeil.com\">contacto@redeil.com</a></p>\n                        <p>📍 CDMX y Área Metropolitana</p>\n                    </div>\n                </aside>\n            </div>\n        </div>\n    </main>\n    \n    <footer>\n        <div class=\"container\">\n            <p>© ${datosServicio.año} REDEIL - Renta de Equipo para Eventos. Todos los derechos reservados.</p>\n            <p style=\"margin-top:10px;\">Transformamos momentos en memorias inolvidables ✨</p>\n        </div>\n    </footer>\n</body>\n</html>`;\n\nreturn {\n  nombreArchivo: datosServicio.nombreArchivo,\n  slug: datosServicio.slug,\n  servicio: datosServicio.servicio.servicio,\n  categoria: datosServicio.servicio.categoria,\n  contenidoHTML: paginaCompleta,\n  fecha: datosServicio.fecha,\n  rutaFTP: `/website_70da8c2e/blog/${datosServicio.nombreArchivo}`\n};"
+      },
+      "id": "procesar-html",
+      "name": "📝 Procesar y Crear HTML Completo",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "path": "={{ $json.rutaFTP }}",
+        "binaryPropertyName": "data"
+      },
+      "id": "ftp-upload",
+      "name": "📤 Subir a FTP",
+      "type": "n8n-nodes-base.ftp",
+      "typeVersion": 1,
+      "position": [1100, 300],
+      "credentials": {
+        "ftp": {
+          "id": "CREAR_CREDENCIAL",
+          "name": "REDEIL FTP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendMessage",
+        "chatId": "772938445",
+        "text": "=✅ *NUEVO ARTÍCULO PUBLICADO EN REDEIL*\n\n📝 *Título:* {{ $('📝 Procesar y Crear HTML Completo').item.json.servicio }}\n📂 *Categoría:* {{ $('📝 Procesar y Crear HTML Completo').item.json.categoria }}\n📅 *Fecha:* {{ $('📝 Procesar y Crear HTML Completo').item.json.fecha }}\n\n🔗 *URL:* https://redeil.com/blog/{{ $('📝 Procesar y Crear HTML Completo').item.json.nombreArchivo }}\n\n✨ El artículo ha sido generado automáticamente con IA y optimizado para SEO.\n\n_Workflow REDEIL Blog Generator_",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "telegram-notificacion",
+      "name": "📱 Notificar por Telegram",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [1320, 300],
+      "credentials": {
+        "telegramApi": {
+          "id": "CREAR_CREDENCIAL",
+          "name": "REDEIL Telegram Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendMessage",
+        "chatId": "772938445",
+        "text": "=❌ *ERROR EN GENERACIÓN DE ARTÍCULO*\n\n⚠️ Ha ocurrido un error en el workflow de REDEIL.\n\n📋 *Detalles:*\n{{ $json.error.message }}\n\nPor favor revisa el workflow en n8n.\n\n_Workflow REDEIL Blog Generator_",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "telegram-error",
+      "name": "🚨 Notificar Error",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [1320, 500],
+      "credentials": {
+        "telegramApi": {
+          "id": "CREAR_CREDENCIAL",
+          "name": "REDEIL Telegram Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={{ { data: Buffer.from($json.contenidoHTML, 'utf-8').toString('base64') } }}",
+        "options": {}
+      },
+      "id": "convertir-binario",
+      "name": "🔄 Convertir a Binario",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 3.1,
+      "position": [880, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Convertir el HTML a formato binario para FTP\nconst htmlContent = $input.first().json.contenidoHTML;\nconst nombreArchivo = $input.first().json.nombreArchivo;\nconst rutaFTP = $input.first().json.rutaFTP;\n\n// Crear el binary data\nconst binaryData = Buffer.from(htmlContent, 'utf-8');\n\nreturn {\n  json: {\n    nombreArchivo: nombreArchivo,\n    rutaFTP: rutaFTP,\n    servicio: $input.first().json.servicio,\n    categoria: $input.first().json.categoria,\n    fecha: $input.first().json.fecha\n  },\n  binary: {\n    data: {\n      data: binaryData.toString('base64'),\n      mimeType: 'text/html',\n      fileName: nombreArchivo\n    }\n  }\n};"
+      },
+      "id": "preparar-archivo",
+      "name": "📦 Preparar Archivo para FTP",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [880, 300]
+    }
+  ],
+  "connections": {
+    "⏰ Cada 4 Días": {
+      "main": [
+        [
+          {
+            "node": "🎲 Seleccionar Servicio Aleatorio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🎲 Seleccionar Servicio Aleatorio": {
+      "main": [
+        [
+          {
+            "node": "🤖 Gemini - Generar Artículo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "🤖 Gemini - Generar Artículo": {
+      "main": [
+        [
+          {
+            "node": "📝 Procesar y Crear HTML Completo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📝 Procesar y Crear HTML Completo": {
+      "main": [
+        [
+          {
+            "node": "📦 Preparar Archivo para FTP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📦 Preparar Archivo para FTP": {
+      "main": [
+        [
+          {
+            "node": "📤 Subir a FTP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "📤 Subir a FTP": {
+      "main": [
+        [
+          {
+            "node": "📱 Notificar por Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "name": "Blog",
+      "id": "blog"
+    },
+    {
+      "name": "SEO",
+      "id": "seo"
+    },
+    {
+      "name": "Automatización",
+      "id": "auto"
+    }
+  ],
+  "pinData": {},
+  "versionId": "1",
+  "triggerCount": 1
+}

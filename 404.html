@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina No Encontrada | INFLAPY - Renta de Inflables CDMX</title>
+  <meta name="description" content="La pagina que buscas no existe. Visita nuestro catalogo de inflables para fiestas y eventos en CDMX y Estado de México.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://inflablesparafiestas.com.mx/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <meta name="theme-color" content="#ff12cc">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #ff12cc;
+      --color-dark: #0a0a0f;
+      --color-text: #ffffff;
+      --color-text-muted: #a0a0b0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, var(--color-dark) 0%, #1a0a1f 50%, var(--color-dark) 100%);
+      color: var(--color-text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .error-container {
+      max-width: 600px;
+    }
+
+    .error-emoji {
+      font-size: 8rem;
+      margin-bottom: 1.5rem;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--color-primary), #ff6b6b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .error-code {
+      font-size: 1.2rem;
+      color: var(--color-text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .btn-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--color-primary), #ff6b6b);
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(255, 18, 204, 0.3);
+    }
+
+    .btn-home:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(255, 18, 204, 0.4);
+    }
+
+    .links-section {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .links-title {
+      font-size: 1rem;
+      color: var(--color-text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .links-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .links-list a {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.3s ease;
+    }
+
+    .links-list a:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 480px) {
+      .error-emoji {
+        font-size: 5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="error-container">
+    <div class="error-emoji">🎈</div>
+    <h1>Ups! Pagina No Encontrada</h1>
+    <p class="error-code">Error 404</p>
+    <p>
+      Parece que este inflable se volo! La pagina que buscas no existe o fue movida.
+      Pero no te preocupes, tenemos muchos inflables esperandote.
+    </p>
+    <a href="/" class="btn-home">
+      <span>🏠</span>
+      Volver al Inicio
+    </a>
+
+    <div class="links-section">
+      <p class="links-title">O visita nuestras secciones:</p>
+      <div class="links-list">
+        <a href="/catalogo.html">Catalogo de Inflables</a>
+        <a href="/inflables-chicos.html">Inflables Chicos</a>
+        <a href="/inflables-medianos.html">Inflables Medianos</a>
+        <a href="/inflables-grandes.html">Inflables Grandes</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

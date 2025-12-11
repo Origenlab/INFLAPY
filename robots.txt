@@ -1,0 +1,46 @@
+# Robots.txt para INFLAPY - Renta de Inflables CDMX
+# https://inflablesparafiestas.com.mx
+# Actualizado: 2025-12-08
+
+# Permitir todos los bots de busqueda
+User-agent: *
+Allow: /
+
+# Archivos CSS y JS (importante para renderizado)
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+# Bloquear archivos de sistema y componentes internos
+Disallow: /components/
+Disallow: /.audit/
+Disallow: /*.json$
+
+# Bloquear parametros de busqueda duplicados
+Disallow: /*?*
+Allow: /blog.html?cat=*
+Allow: /blog.html?tag=*
+
+# Googlebot especifico
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Googlebot para imagenes
+User-agent: Googlebot-Image
+Allow: /img/
+Allow: /*.webp$
+Allow: /*.avif$
+Allow: /*.png$
+Allow: /*.jpg$
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Sitemap
+Sitemap: https://inflablesparafiestas.com.mx/sitemap.xml
+
+# Host preferido
+Host: https://inflablesparafiestas.com.mx

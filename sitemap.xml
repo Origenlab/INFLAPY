@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Página Principal -->
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/"/>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/inflables-para-fiestas.avif</image:loc>
+      <image:title>Renta de Inflables para Fiestas CDMX - INFLAPY</image:title>
+    </image:image>
+  </url>
+
+  <!-- Páginas de Servicios Principales -->
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/renta-de-inflables.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/renta-de-inflables.html"/>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/catalogo.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/catalogo.html"/>
+  </url>
+
+  <!-- Categorías de Inflables -->
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-chicos.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/inflables-chicos.html"/>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/img-inflables-chicos/renta-inflables-chicos-fiestas-infantiles-cdmx.webp</image:loc>
+      <image:title>Inflables Chicos para Fiestas Infantiles CDMX</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-medianos.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/inflables-medianos.html"/>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/img-inflable-medianos/renta-de-inflables-medianos.webp</image:loc>
+      <image:title>Inflables Medianos para Fiestas y Eventos CDMX</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-grandes.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/inflables-grandes.html"/>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/img-inflables-grandes/renta-de-inflables-grandes.webp</image:loc>
+      <image:title>Inflables Grandes para Eventos CDMX</image:title>
+    </image:image>
+  </url>
+
+  <!-- Productos Individuales - Inflables Chicos -->
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-chicos/inflable-para-fiestas-infantiles-mini-castillo.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/img-mini-castillo/renta-de-mini-castillo-inflable.webp</image:loc>
+      <image:title>Mini Castillo Inflable para Fiestas Infantiles</image:title>
+    </image:image>
+  </url>
+
+  <!-- Productos Individuales - Inflables Medianos -->
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-medianos/inflable-para-fiestas-infantiles-dragones-rojos.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/img-dragones/renta-inflable-mediano-dragones-rojos.webp</image:loc>
+      <image:title>Inflable Dragones Rojos para Fiestas CDMX</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-medianos/inflable-para-fiestas-infantiles-castillo-de-princesas.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/img-castillo-princesas/renta-inflable-princesas-cdmx.webp</image:loc>
+      <image:title>Castillo de Princesas Inflable para Fiestas</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-medianos/inflable-para-fiestas-infantiles-mini-jungla.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/img-mini-jungla/castillo-safari-inflable-cdmx.webp</image:loc>
+      <image:title>Mini Jungla Inflable Safari para Fiestas</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-medianos/inflable-para-fiestas-infantiles-gusanitos.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/img-gusanitos/inflable-gusanitos-tuneles-fiestas.webp</image:loc>
+      <image:title>Inflable Gusanitos con Tuneles para Fiestas</image:title>
+    </image:image>
+  </url>
+
+  <!-- Productos Individuales - Inflables Grandes -->
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-grandes/inflable-para-fiestas-infantiles-barco-pirata.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/iimg-barco-pirata/sector1.webp</image:loc>
+      <image:title>Barco Pirata Inflable con Tobogin para Fiestas</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-grandes/inflable-para-fiestas-infantiles-extremo.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/img-extremo/inflable-extremo-circuito-obstaculos.webp</image:loc>
+      <image:title>Inflable Extremo Circuito de Obstaculos</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/inflables-grandes/inflable-para-fiestas-infantiles-castillo-blanco.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://inflablesparafiestas.com.mx/img/img-castillo-blanco/sector1.webp</image:loc>
+      <image:title>Castillo Blanco Inflable para Bodas y Eventos</image:title>
+    </image:image>
+  </url>
+
+  <!-- Páginas Informativas -->
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/como-funciona.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/como-funciona.html"/>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/cobertura.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/cobertura.html"/>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/preguntas-frecuentes.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/preguntas-frecuentes.html"/>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/nosotros.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/nosotros.html"/>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/contacto.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/contacto.html"/>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/opiniones.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/opiniones.html"/>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/blog.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inflablesparafiestas.com.mx/blog.html"/>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/blog/cuanto-cuesta-rentar-inflable-cdmx.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/blog/como-elegir-inflable-perfecto.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/blog/ideas-fiestas-infantiles-cdmx.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/blog/servicios-renta-inflables-cdmx-edomex.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Páginas Legales -->
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/aviso-privacidad.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://inflablesparafiestas.com.mx/terminos-condiciones.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

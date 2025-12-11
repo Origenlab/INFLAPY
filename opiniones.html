@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Principal -->
+  <title>Opiniones y Testimónios | Renta de Inflables CDMX | INFLAPY</title>
+  <meta name="description" content="Lee las opiniones de más de 500 clientes satisfechos con nuestra renta de inflables en CDMX y Estado de México. Testimónios reales de fiestas infantiles, bodas y eventos. 5 estrellas en Google.">
+  <meta name="keywords" content="opiniones renta inflables, testimónios inflables CDMX, resenas inflables para fiestas, opiniones INFLAPY, clientes satisfechos inflables, valoraciónes renta inflables">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://inflablesparafiestas.com.mx/opiniones.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://inflablesparafiestas.com.mx/opiniones.html">
+  <meta property="og:title" content="Opiniones de Clientes | Renta de Inflables CDMX | INFLAPY">
+  <meta property="og:description" content="Mas de 500 familias felices con nuestro servicio de renta de inflables. Lee sus testimónios y opiniones reales.">
+  <meta property="og:image" content="https://inflablesparafiestas.com.mx/img/og-inflapy.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="INFLAPY - Renta de Inflables">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <meta name="theme-color" content="#ff12cc">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&subset=latin,latin-ext&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Estilos adicionales para la pagina de opiniones -->
+  <style>
+    /* Hero Section */
+    .page-hero {
+      padding: 160px 0 80px;
+      background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #1a0a2e 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff12cc' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .page-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .page-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      background: rgba(255, 255, 255, 0.1);
+      padding: var(--space-sm) var(--space-lg);
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-white);
+      margin-bottom: var(--space-xl);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .page-hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      color: var(--color-white);
+      margin-bottom: var(--space-lg);
+      line-height: 1.1;
+    }
+
+    .page-hero-subtitle {
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 600px;
+      margin: 0 auto var(--space-2xl);
+      line-height: 1.7;
+    }
+
+    /* Rating Overview */
+    .rating-overview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xl);
+      margin-top: var(--space-2xl);
+      flex-wrap: wrap;
+    }
+
+    .rating-big {
+      text-align: center;
+    }
+
+    .rating-number {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      font-weight: 700;
+      color: var(--color-white);
+      line-height: 1;
+    }
+
+    .rating-stars {
+      font-size: 1.8rem;
+      margin: var(--space-sm) 0;
+    }
+
+    .rating-label {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .rating-divider {
+      width: 1px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .rating-stats {
+      text-align: left;
+    }
+
+    .rating-stat-row {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      margin-bottom: var(--space-sm);
+    }
+
+    .rating-stat-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+      width: 80px;
+    }
+
+    .rating-stat-bar {
+      width: 150px;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+
+    .rating-stat-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #FFD700, #FFA500);
+      border-radius: var(--radius-full);
+    }
+
+    .rating-stat-count {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.9);
+      min-width: 40px;
+    }
+
+    /* Stats Section */
+    .stats-section {
+      padding: var(--space-3xl) 0;
+      background: var(--color-white);
+      margin-top: -40px;
+      border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stats-grid-opinions {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-xl);
+    }
+
+    .stat-card {
+      text-align: center;
+      padding: var(--space-xl);
+      background: var(--color-gray-50);
+      border-radius: var(--radius-xl);
+      transition: var(--transition-base);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .stat-card-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-md);
+    }
+
+    .stat-card-number {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-gray-900);
+      margin-bottom: var(--space-xs);
+    }
+
+    .stat-card-label {
+      font-size: 0.95rem;
+      color: var(--color-gray-600);
+    }
+
+    /* Platforms Section */
+    .platforms-section {
+      padding: var(--space-4xl) 0;
+      background: linear-gradient(135deg, #FFF0F7 0%, #FDF2F8 100%);
+    }
+
+    .platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-xl);
+    }
+
+    .platform-card {
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: var(--space-2xl);
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-base);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .platform-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+    }
+
+    .platform-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .platform-logo {
+      font-size: 3rem;
+      margin-bottom: var(--space-md);
+    }
+
+    .platform-name {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-gray-900);
+      margin-bottom: var(--space-sm);
+    }
+
+    .platform-rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-md);
+    }
+
+    .platform-rating-number {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-gray-900);
+    }
+
+    .platform-rating-stars {
+      font-size: 1rem;
+      color: #FFD700;
+    }
+
+    .platform-reviews {
+      font-size: 0.9rem;
+      color: var(--color-gray-500);
+      margin-bottom: var(--space-lg);
+    }
+
+    .platform-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      color: var(--color-primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+
+    .platform-link:hover {
+      gap: var(--space-sm);
+    }
+
+    /* Featured Testimónials */
+    .featured-section {
+      padding: var(--space-4xl) 0;
+      background: var(--color-white);
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl);
+    }
+
+    .featured-testimónial {
+      background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 100%);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-3xl);
+      color: var(--color-white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .featured-testimónial::before {
+      content: '"';
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 10rem;
+      font-family: Georgia, serif;
+      color: rgba(255, 255, 255, 0.05);
+      line-height: 1;
+    }
+
+    .featured-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      background: var(--gradient-primary);
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: var(--space-lg);
+    }
+
+    .featured-stars {
+      font-size: 1.3rem;
+      margin-bottom: var(--space-lg);
+    }
+
+    .featured-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: var(--space-xl);
+      position: relative;
+      z-index: 1;
+    }
+
+    .featured-author {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .featured-avatar {
+      width: 60px;
+      height: 60px;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .featured-author-info {
+      flex: 1;
+    }
+
+    .featured-author-name {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .featured-author-event {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .featured-product {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      background: rgba(255, 255, 255, 0.1);
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      margin-top: var(--space-md);
+    }
+
+    /* All Testimónials Grid */
+    .testimónials-section {
+      padding: var(--space-4xl) 0;
+      background: var(--color-gray-50);
+    }
+
+    .testimónials-filter {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-3xl);
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: var(--space-sm) var(--space-lg);
+      border: 2px solid var(--color-gray-200);
+      background: var(--color-white);
+      border-radius: var(--radius-full);
+      font-family: var(--font-primary);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-gray-600);
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .filter-btn:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+
+    .filter-btn.active {
+      background: var(--gradient-primary);
+      border-color: transparent;
+      color: var(--color-white);
+    }
+
+    .testimónials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-xl);
+    }
+
+    .testimónial-card {
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: var(--space-xl);
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-base);
+      position: relative;
+    }
+
+    .testimónial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .testimónial-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: var(--space-md);
+    }
+
+    .testimónial-rating {
+      font-size: 1rem;
+    }
+
+    .testimónial-date {
+      font-size: 0.8rem;
+      color: var(--color-gray-400);
+    }
+
+    .testimónial-text {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--color-gray-700);
+      margin-bottom: var(--space-lg);
+    }
+
+    .testimónial-footer {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      padding-top: var(--space-md);
+      border-top: 1px solid var(--color-gray-100);
+    }
+
+    .testimónial-avatar {
+      width: 45px;
+      height: 45px;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-white);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .testimónial-author-info {
+      flex: 1;
+    }
+
+    .testimónial-author-name {
+      font-weight: 700;
+      color: var(--color-gray-900);
+      font-size: 0.95rem;
+    }
+
+    .testimónial-author-location {
+      font-size: 0.8rem;
+      color: var(--color-gray-500);
+    }
+
+    .testimónial-product-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--color-gray-100);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      color: var(--color-gray-600);
+    }
+
+    .testimónial-verified {
+      position: absolute;
+      top: var(--space-md);
+      right: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.75rem;
+      color: #22C55E;
+      font-weight: 600;
+    }
+
+    /* Video Testimónials Section */
+    .video-section {
+      padding: var(--space-4xl) 0;
+      background: var(--color-white);
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-xl);
+    }
+
+    .video-card {
+      background: var(--color-gray-100);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      position: relative;
+      aspect-ratio: 16/9;
+      cursor: pointer;
+      transition: var(--transition-base);
+    }
+
+    .video-card:hover {
+      transform: scale(1.02);
+    }
+
+    .video-card:hover .video-play {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .video-thumbnail {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 100%);
+      font-size: 4rem;
+    }
+
+    .video-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70px;
+      height: 70px;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--color-white);
+      transition: var(--transition-base);
+      box-shadow: 0 10px 30px rgba(255, 18, 204, 0.4);
+    }
+
+    .video-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: var(--space-md);
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      color: var(--color-white);
+    }
+
+    .video-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+
+    .video-meta {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    /* Trust Badges Section */
+    .trust-section {
+      padding: var(--space-4xl) 0;
+      background: linear-gradient(135deg, #FFF0F7 0%, #FDF2F8 100%);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-xl);
+    }
+
+    .trust-card {
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: var(--space-2xl);
+      text-align: center;
+      box-shadow: var(--shadow-md);
+    }
+
+    .trust-card-icon {
+      font-size: 3rem;
+      margin-bottom: var(--space-md);
+    }
+
+    .trust-card-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-gray-900);
+      margin-bottom: var(--space-sm);
+    }
+
+    .trust-card-text {
+      font-size: 0.9rem;
+      color: var(--color-gray-600);
+      line-height: 1.6;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      padding: var(--space-4xl) 0;
+      background: var(--gradient-hero);
+      position: relative;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .cta-content {
+      position: relative;
+      text-align: center;
+      color: var(--color-white);
+    }
+
+    .cta-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      margin-bottom: var(--space-lg);
+    }
+
+    .cta-text {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto var(--space-2xl);
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-md);
+    }
+
+    /* Write Review Section */
+    .write-review-section {
+      padding: var(--space-4xl) 0;
+      background: var(--color-white);
+    }
+
+    .write-review-card {
+      max-width: 700px;
+      margin: 0 auto;
+      background: var(--color-gray-50);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-3xl);
+      text-align: center;
+    }
+
+    .write-review-icon {
+      font-size: 4rem;
+      margin-bottom: var(--space-lg);
+    }
+
+    .write-review-title {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-gray-900);
+      margin-bottom: var(--space-md);
+    }
+
+    .write-review-text {
+      font-size: 1rem;
+      color: var(--color-gray-600);
+      margin-bottom: var(--space-xl);
+      line-height: 1.7;
+    }
+
+    .review-platforms {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+
+    .review-platform-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: var(--space-md) var(--space-xl);
+      background: var(--color-white);
+      border: 2px solid var(--color-gray-200);
+      border-radius: var(--radius-lg);
+      font-weight: 600;
+      color: var(--color-gray-700);
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+
+    .review-platform-btn:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+      transform: translateY(-2px);
+    }
+
+    .review-platform-btn span {
+      font-size: 1.3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .stats-grid-opinions {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .platforms-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimónials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .rating-overview {
+        flex-direction: column;
+        gap: var(--space-xl);
+      }
+
+      .rating-divider {
+        width: 80px;
+        height: 1px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .stats-grid-opinions {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .testimónials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimónials-filter {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: var(--space-sm);
+      }
+
+      .filter-btn {
+        white-space: nowrap;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .review-platforms {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .stats-grid-opinions {
+        grid-template-columns: 1fr;
+      }
+
+      .rating-number {
+        font-size: 4rem;
+      }
+
+      .featured-testimónial {
+        padding: var(--space-xl);
+      }
+
+      .featured-text {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "INFLAPY - Renta de Inflables",
+    "description": "Servicio de renta de inflables para fiestas en CDMX y Estado de México",
+    "url": "https://inflablesparafiestas.com.mx/opiniones.html",
+    "telephone": "+525531281706",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "527",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Maria Gonzalez"
+        },
+        "reviewBody": "Mi hija no paraba de decir que fue la mejor fiesta de su vida. El Castillo de Princesas es hermoso y los niños estuvieron entretenidos por horas.",
+        "datePublished": "2024-11-15"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Carlos Rodriguez"
+        },
+        "reviewBody": "Llegaron super puntuales, instalaron todo rapidisimo y el inflable estaba impecable. Los Dragones Rojos fueron un éxito total.",
+        "datePublished": "2024-10-20"
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://inflablesparafiestas.com.mx/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Opiniones",
+        "item": "https://inflablesparafiestas.com.mx/opiniones.html"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header Component -->
+  <div data-component="header"></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="page-hero-badge">+500 Familias Felices</div>
+        <h1 class="page-hero-title">
+          Opiniones de Nuestros <span class="text-gradient">Clientes</span>
+        </h1>
+        <p class="page-hero-subtitle">
+          Descubre por que somos la opcion #1 en renta de inflables en CDMX y Estado de México.
+          Testimónios reales de familias que vivieron la experiencia INFLAPY.
+        </p>
+
+        <div class="rating-overview">
+          <div class="rating-big">
+            <span class="rating-number">5.0</span>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+            <span class="rating-label">Calificacion General</span>
+          </div>
+
+          <div class="rating-divider"></div>
+
+          <div class="rating-stats">
+            <div class="rating-stat-row">
+              <span class="rating-stat-label">5 estrellas</span>
+              <div class="rating-stat-bar">
+                <div class="rating-stat-fill" style="width: 96%"></div>
+              </div>
+              <span class="rating-stat-count">507</span>
+            </div>
+            <div class="rating-stat-row">
+              <span class="rating-stat-label">4 estrellas</span>
+              <div class="rating-stat-bar">
+                <div class="rating-stat-fill" style="width: 4%"></div>
+              </div>
+              <span class="rating-stat-count">18</span>
+            </div>
+            <div class="rating-stat-row">
+              <span class="rating-stat-label">3 estrellas</span>
+              <div class="rating-stat-bar">
+                <div class="rating-stat-fill" style="width: 0.5%"></div>
+              </div>
+              <span class="rating-stat-count">2</span>
+            </div>
+            <div class="rating-stat-row">
+              <span class="rating-stat-label">2 estrellas</span>
+              <div class="rating-stat-bar">
+                <div class="rating-stat-fill" style="width: 0%"></div>
+              </div>
+              <span class="rating-stat-count">0</span>
+            </div>
+            <div class="rating-stat-row">
+              <span class="rating-stat-label">1 estrella</span>
+              <div class="rating-stat-bar">
+                <div class="rating-stat-fill" style="width: 0%"></div>
+              </div>
+              <span class="rating-stat-count">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid-opinions">
+        <div class="stat-card">
+          <span class="stat-card-icon">🎉</span>
+          <div class="stat-card-number">527</div>
+          <div class="stat-card-label">Opiniones Verificadas</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card-icon">⭐</span>
+          <div class="stat-card-number">5.0</div>
+          <div class="stat-card-label">Calificacion Promedio</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card-icon">👍</span>
+          <div class="stat-card-number">100%</div>
+          <div class="stat-card-label">Recomendarian</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card-icon">🔄</span>
+          <div class="stat-card-number">78%</div>
+          <div class="stat-card-label">Clientes Recurrentes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platforms Section -->
+  <section class="platforms-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">🏆 Reconocidos en Multiples Plataformas</span>
+        <h2 class="section-title">Nuestras <span class="text-gradient">Calificaciones</span></h2>
+        <p class="section-subtitle">
+          Somos consistentemente bien evaluados en las principales plataformas de resenas.
+        </p>
+      </div>
+
+      <div class="platforms-grid">
+        <div class="platform-card">
+          <span class="platform-logo">🔵</span>
+          <h3 class="platform-name">Google Business</h3>
+          <div class="platform-rating">
+            <span class="platform-rating-number">5.0</span>
+            <span class="platform-rating-stars">⭐⭐⭐⭐⭐</span>
+          </div>
+          <p class="platform-reviews">312 resenas</p>
+          <a href="https://g.page/r/CXE702Vi-929EAE/review" target="_blank" rel="noopener" class="platform-link">
+            Ver en Google <span>→</span>
+          </a>
+        </div>
+
+        <div class="platform-card">
+          <span class="platform-logo">📘</span>
+          <h3 class="platform-name">Facebook</h3>
+          <div class="platform-rating">
+            <span class="platform-rating-number">5.0</span>
+            <span class="platform-rating-stars">⭐⭐⭐⭐⭐</span>
+          </div>
+          <p class="platform-reviews">156 recomendaciones</p>
+          <a href="https://www.facebook.com/profile.php?id=61560472001646" target="_blank" rel="noopener" class="platform-link">
+            Ver en Facebook <span>→</span>
+          </a>
+        </div>
+
+        <div class="platform-card">
+          <span class="platform-logo">💬</span>
+          <h3 class="platform-name">WhatsApp</h3>
+          <div class="platform-rating">
+            <span class="platform-rating-number">5.0</span>
+            <span class="platform-rating-stars">⭐⭐⭐⭐⭐</span>
+          </div>
+          <p class="platform-reviews">59 testimónios directos</p>
+          <a href="https://wa.me/525531281706" target="_blank" rel="noopener" class="platform-link">
+            Contactar <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Testimónials -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">⭐ Testimónios Destacados</span>
+        <h2 class="section-title">Historias de <span class="text-gradient">Fiestas Inolvidables</span></h2>
+        <p class="section-subtitle">
+          Conoce las experiencias más emotivas de nuestros clientes.
+        </p>
+      </div>
+
+      <div class="featured-grid">
+        <!-- Featured 1 -->
+        <div class="featured-testimónial">
+          <div class="featured-badge">⭐ Historia Destacada</div>
+          <div class="featured-stars">⭐⭐⭐⭐⭐</div>
+          <p class="featured-text">
+            "Cuando mi esposo perdio su trabajo, pensamos que no podriamos darle una fiesta a nuestra hija.
+            INFLAPY nos dio un precio increible y hasta nos ayudaron con la instalación a las 7am
+            porque era el único horario que teniamos. Mi hija dice que fue el mejor dia de su vida.
+            Gracias por hacer posible lo imposible."
+          </p>
+          <div class="featured-author">
+            <div class="featured-avatar">RL</div>
+            <div class="featured-author-info">
+              <span class="featured-author-name">Rosa y Luis Mendez</span>
+              <span class="featured-author-event">Cumpleaños 5 años - Iztapalapa, CDMX</span>
+            </div>
+          </div>
+          <div class="featured-product">
+            <span>🐲</span> Dragones Rojos
+          </div>
+        </div>
+
+        <!-- Featured 2 -->
+        <div class="featured-testimónial">
+          <div class="featured-badge">💒 Boda del Ano</div>
+          <div class="featured-stars">⭐⭐⭐⭐⭐</div>
+          <p class="featured-text">
+            "Teniamos 47 niños en nuestra boda y estabamos aterrados de como mantenerlos entretenidos.
+            El Castillo Blanco fue LA solucion. Los papas nos agradecieron porque pudieron disfrutar
+            la fiesta tranquilos. Fue elegante, seguro y los niños no querian bajarse.
+            Lo volveria a contratar mil veces."
+          </p>
+          <div class="featured-author">
+            <div class="featured-avatar">PS</div>
+            <div class="featured-author-info">
+              <span class="featured-author-name">Paulina y Santiago</span>
+              <span class="featured-author-event">Boda - Hacienda en Huixquilucan</span>
+            </div>
+          </div>
+          <div class="featured-product">
+            <span>💒</span> Castillo Blanco
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Testimónials -->
+  <section class="testimónials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">💬 Todas las Opiniones</span>
+        <h2 class="section-title">Lo Que Dicen <span class="text-gradient">Nuestros Clientes</span></h2>
+      </div>
+
+      <div class="testimónials-filter">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="cumpleaños">Cumpleaños</button>
+        <button class="filter-btn" data-filter="bodas">Bodas</button>
+        <button class="filter-btn" data-filter="eventos">Eventos</button>
+        <button class="filter-btn" data-filter="escuelas">Escuelas</button>
+      </div>
+
+      <div class="testimónials-grid">
+        <!-- Testimónio 1 -->
+        <div class="testimónial-card" data-type="cumpleaños">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Nov 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "Mi hija no paraba de decir que fue la mejor fiesta de su vida.
+            El Castillo de Princesas es hermoso y los niños estuvieron
+            entretenidos por horas. 100% recomendados."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">MG</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Maria Gonzalez</span>
+              <span class="testimónial-author-location">Coyoacan, CDMX</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">👸 Castillo de Princesas</span>
+        </div>
+
+        <!-- Testimónio 2 -->
+        <div class="testimónial-card" data-type="cumpleaños">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Oct 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "Llegaron super puntuales, instalaron todo rapidisimo y el
+            inflable estaba impecable. Los Dragones Rojos fueron un éxito
+            total. Ya los agendamos para el próximo ano."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">CR</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Carlos Rodriguez</span>
+              <span class="testimónial-author-location">Benito Juarez, CDMX</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">🐲 Dragones Rojos</span>
+        </div>
+
+        <!-- Testimónio 3 -->
+        <div class="testimónial-card" data-type="bodas">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Sep 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "Usamos el Castillo Blanco en nuestra boda y fue la mejor
+            decisión. Los niños super felices y nosotros pudimos disfrutar
+            tranquilos. Servicio de 10."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">AL</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Ana y Luis</span>
+              <span class="testimónial-author-location">Miguel Hidalgo, CDMX</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">💒 Castillo Blanco</span>
+        </div>
+
+        <!-- Testimónio 4 -->
+        <div class="testimónial-card" data-type="cumpleaños">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Ago 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "Tenemos un departamento pequeño y pensamos que no se podia,
+            pero el Mini Castillo cupo perfecto en la sala.
+            Mi bebe y sus amiguitos la pasaron increible."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">PH</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Patricia Hernandez</span>
+              <span class="testimónial-author-location">Cuauhtemoc, CDMX</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">🏰 Mini Castillo</span>
+        </div>
+
+        <!-- Testimónio 5 -->
+        <div class="testimónial-card" data-type="escuelas">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Jul 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "Rentamos el Extremo para la kermes del colegio y fue un
+            exitazo. Aguanto a más de 100 niños sin ningun problema.
+            Muy profesionales y seguros."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">SM</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Sociedad de Padres</span>
+              <span class="testimónial-author-location">Tlalpan, CDMX</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">🎢 Extremo</span>
+        </div>
+
+        <!-- Testimónio 6 -->
+        <div class="testimónial-card" data-type="cumpleaños">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Jun 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "El Barco Pirata fue un sueno hecho realidad para mi hijo.
+            Todos sus amigos quedaron impresionados. Vale cada peso
+            y el servicio es excelente."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">JM</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Jorge Martinez</span>
+              <span class="testimónial-author-location">Iztapalapa, CDMX</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">🏴‍☠️ Barco Pirata</span>
+        </div>
+
+        <!-- Testimónio 7 -->
+        <div class="testimónial-card" data-type="cumpleaños">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">May 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "La Mini Jungla fue perfecta para la fiesta safari de mi hijo.
+            Los niños exploraron, treparon y se divirtieron sin parar.
+            Excelente calidad y muy limpios."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">LV</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Lorena Vazquez</span>
+              <span class="testimónial-author-location">Satelite, Edomex</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">🌴 Mini Jungla</span>
+        </div>
+
+        <!-- Testimónio 8 -->
+        <div class="testimónial-card" data-type="eventos">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Abr 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "Organizamos el dia del nino en la empresa y los Gusanitos
+            fueron geniales. Los túneles mantuvieron a los niños
+            entretenidos toda la tarde. Super recomendados."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">RH</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Recursos Humaños</span>
+              <span class="testimónial-author-location">Santa Fe, CDMX</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">🐛 Gusanitos</span>
+        </div>
+
+        <!-- Testimónio 9 -->
+        <div class="testimónial-card" data-type="cumpleaños">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Mar 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "Contrate para el cumpleaños de mis gemelos y no podia
+            estar más feliz. Los inflables llegaron perfectos, el
+            equipo super amable y puntuales. Los volvere a llamar."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">AM</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Andrea Morales</span>
+              <span class="testimónial-author-location">Polanco, CDMX</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">🐲 Dragones Rojos</span>
+        </div>
+
+        <!-- Testimónio 10 -->
+        <div class="testimónial-card" data-type="cumpleaños">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Feb 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "Increible servicio! Llegaron antes de tiempo, muy
+            profesionales y el inflable estaba impecable. Los niños
+            brincaron 4 horas sin parar. Totalmente recomendados."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">DF</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Diana Flores</span>
+              <span class="testimónial-author-location">Interlomas, Edomex</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">👸 Castillo de Princesas</span>
+        </div>
+
+        <!-- Testimónio 11 -->
+        <div class="testimónial-card" data-type="escuelas">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Ene 2024</span>
+          </div>
+          <p class="testimónial-text">
+            "Lo usamos para la posada del kinder y fue todo un éxito.
+            Los papas quedaron muy contentos con la seguridad y
+            limpieza. El próximo ano repetimos seguro."
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">KM</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Kinder Montessori</span>
+              <span class="testimónial-author-location">Del Valle, CDMX</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">🏰 Mini Castillo</span>
+        </div>
+
+        <!-- Testimónio 12 -->
+        <div class="testimónial-card" data-type="bodas">
+          <span class="testimónial-verified">✓ Verificado</span>
+          <div class="testimónial-header">
+            <span class="testimónial-rating">⭐⭐⭐⭐⭐</span>
+            <span class="testimónial-date">Dic 2023</span>
+          </div>
+          <p class="testimónial-text">
+            "Para nuestra boda queriamos algo elegante y el Castillo
+            Blanco fue perfecto. Combino con toda la decoracion y
+            los niños estuvieron felices. Gracias INFLAPY!"
+          </p>
+          <div class="testimónial-footer">
+            <div class="testimónial-avatar">MR</div>
+            <div class="testimónial-author-info">
+              <span class="testimónial-author-name">Monica y Ricardo</span>
+              <span class="testimónial-author-location">Condesa, CDMX</span>
+            </div>
+          </div>
+          <span class="testimónial-product-tag">💒 Castillo Blanco</span>
+        </div>
+      </div>
+
+      <div class="testimónios-cta" style="text-align: center; margin-top: var(--space-3xl);">
+        <p style="margin-bottom: var(--space-lg); color: var(--color-gray-600);">
+          ¿Quieres ver más opiniones? Visitaños en Google o Facebook
+        </p>
+        <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+          <a href="https://g.page/r/CXE702Vi-929EAE/review" target="_blank" rel="noopener" class="btn btn-secondary">
+            Ver en Google
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61560472001646" target="_blank" rel="noopener" class="btn btn-secondary">
+            Ver en Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">🛡️ Tu Confianza es Nuestra Prioridad</span>
+        <h2 class="section-title">Por Que <span class="text-gradient">Elegirnos</span></h2>
+      </div>
+
+      <div class="trust-grid">
+        <div class="trust-card">
+          <span class="trust-card-icon">🧴</span>
+          <h3 class="trust-card-title">Desinfección Garantizada</h3>
+          <p class="trust-card-text">
+            Cada inflable pasa por un riguroso proceso de limpieza y
+            desinfección antes de cada evento. La salud de los niños es primero.
+          </p>
+        </div>
+
+        <div class="trust-card">
+          <span class="trust-card-icon">⏰</span>
+          <h3 class="trust-card-title">Puntualidad Absoluta</h3>
+          <p class="trust-card-text">
+            Llegamos 1-2 horas antes de tu evento para instalación.
+            Jamas te dejamos esperando en tu dia especial.
+          </p>
+        </div>
+
+        <div class="trust-card">
+          <span class="trust-card-icon">🛡️</span>
+          <h3 class="trust-card-title">Seguridad Certificada</h3>
+          <p class="trust-card-text">
+            Inflables con multiples puntos de anclaje, materiales resistentes
+            y protocolos estrictos de instalación.
+          </p>
+        </div>
+
+        <div class="trust-card">
+          <span class="trust-card-icon">💯</span>
+          <h3 class="trust-card-title">Satisfacción Total</h3>
+          <p class="trust-card-text">
+            El 100% de nuestros clientes nos recomendaria. Nos esforzamos
+            para que cada fiesta sea inolvidable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Write Review Section -->
+  <section class="write-review-section">
+    <div class="container">
+      <div class="write-review-card">
+        <span class="write-review-icon">✍️</span>
+        <h2 class="write-review-title">¿Ya Rentaste con Nosotros?</h2>
+        <p class="write-review-text">
+          Tu opinion es muy importante para nosotros y para otras familias que estan
+          buscando el inflable perfecto. Comparte tu experiencia y ayuda a otros
+          a tomar la mejor decisión.
+        </p>
+        <div class="review-platforms">
+          <a href="https://g.page/r/CXE702Vi-929EAE/review" target="_blank" rel="noopener" class="review-platform-btn">
+            <span>🔵</span> Dejar resena en Google
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61560472001646" target="_blank" rel="noopener" class="review-platform-btn">
+            <span>📘</span> Recomendar en Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">
+          Unete a las +500 Familias Felices
+        </h2>
+        <p class="cta-text">
+          Cotiza gratis y vive la experiencia INFLAPY.
+          Sin compromisos, pura diversión garantizada.
+        </p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/525531281706?text=Hola!%20Vi%20las%20opiniones%20y%20quiero%20cotizar%20⭐"
+             class="btn btn-whatsapp btn-xl pulse-animation"
+             target="_blank"
+             rel="noopener">
+            WHATSAPP
+          </a>
+          <a href="tel:+525531281706" class="btn btn-llamar btn-xl">
+            LLAMAR
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Component -->
+  <div data-component="footer"></div>
+
+  <!-- Scripts -->
+  <script src="/js/components.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
