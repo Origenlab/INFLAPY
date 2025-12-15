@@ -1164,18 +1164,6 @@
             <div class="corner-accent"></div>
           </a>
 
-          <a href="mailto:contacto@inflablesparafiestas.com.mx" class="contact-method-card email">
-            <div class="contact-method-image">
-              <span class="contact-method-icon">✉️</span>
-            </div>
-            <div class="contact-method-content">
-              <h3 class="contact-method-title">Email</h3>
-              <p class="contact-method-info">contacto@inflablesparafiestas.com.mx</p>
-              <p class="contact-method-desc">Te respondemos en menos de 24 horas</p>
-              <span class="contact-method-btn">Enviar Correo</span>
-            </div>
-            <div class="corner-accent"></div>
-          </a>
 
           <a href="https://www.google.com/maps/place/Inflables+para+fiestas/@19.434208,-99.1539413,17z/data=!3m2!4b1!5s0x85d1ff32e3fbd0e7:0x45849097cb6a322d!4m6!3m5!1s0x85d1f951ce1becb3:0x49ddfbe52cd33b71!8m2!3d19.434208!4d-99.1513664!16s%2Fg%2F11nt30b2fd?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D" class="contact-method-card location" target="_blank" rel="noopener">
             <div class="contact-method-image">
@@ -1423,13 +1411,6 @@
               </div>
             </div>
 
-            <div class="info-item">
-              <div class="info-item-icon">✉️</div>
-              <div class="info-item-content">
-                <h4>Correo Electrónico</h4>
-                <p>contacto@inflablesparafiestas.com.mx<br>ventas@inflablesparafiestas.com.mx</p>
-              </div>
-            </div>
 
             <div class="info-item">
               <div class="info-item-icon">🕐</div>
@@ -1662,11 +1643,11 @@
 
       let cuerpo = `Nombre: ${nombre}\n`;
       if (telefono) cuerpo += `Teléfono: ${telefono}\n`;
-      cuerpo += `Email: ${email}\n\n`;
-      cuerpo += `Mensaje:\n${mensaje}`;
+      if (email) cuerpo += `Email: ${email}\n`;
+      cuerpo += `\nMensaje:\n${mensaje}`;
 
-      const mailtoLink = `mailto:contacto@inflablesparafiestas.com.mx?subject=${encodeURIComponent(asunto + ' - ' + nombre)}&body=${encodeURIComponent(cuerpo)}`;
-      window.location.href = mailtoLink;
+      const whatsappLink = `https://wa.me/525531281706?text=${encodeURIComponent(cuerpo)}`;
+      window.open(whatsappLink, '_blank');
     }
 
     // Establecer fecha mínima en el selector de fecha
