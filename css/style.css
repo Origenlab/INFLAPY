@@ -667,16 +667,7 @@ button {
 }
 
 .btn-whatsapp.pulse-animation {
-  animation: pulse-whatsapp 2s ease-in-out infinite;
-}
-
-@keyframes pulse-whatsapp {
-  0%, 100% {
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.4);
-  }
-  50% {
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4), 0 0 0 15px rgba(37, 211, 102, 0);
-  }
+  /* Animation removed */
 }
 
 .btn-whatsapp.btn-lg {
