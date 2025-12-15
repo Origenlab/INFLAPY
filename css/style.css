@@ -520,12 +520,7 @@ button {
 }
 
 .marketing-card {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  border-radius: var(--radius-xl);
-  padding: var(--space-xl);
-  box-shadow: var(--shadow-md);
-  border: 1px solid rgba(255, 18, 204, 0.1);
+  padding: var(--space-md) 0;
 }
 
 .marketing-title {
