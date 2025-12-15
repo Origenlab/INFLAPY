@@ -923,12 +923,6 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover .product-image img,
-.product-card:hover .product-img {
-  transform: scale(1.05);
 }
 
 .product-placeholder {
@@ -1045,12 +1039,6 @@ button {
   background: var(--color-gray-50);
   border-radius: var(--radius-xl);
   position: relative;
-  transition: var(--transition-base);
-}
-
-.step-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
 }
 
 .step-number {
@@ -1151,12 +1139,6 @@ button {
   padding: var(--space-xl);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-md);
-  transition: var(--transition-base);
-}
-
-.testimonio-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-xl);
 }
 
 .testimonio-card.featured {
@@ -1393,7 +1375,6 @@ button {
 
 .alcaldia:hover {
   background: var(--color-primary);
-  transform: scale(1.05);
 }
 
 .alcaldia.premium {
@@ -1445,7 +1426,6 @@ button {
 .cta-confetti {
   font-size: 4rem;
   margin-bottom: var(--space-md);
-  animation: bounce 2s ease-in-out infinite;
 }
 
 .cta-title {
@@ -1786,41 +1766,10 @@ button {
   z-index: 3;
   border: 2px solid white;
   box-shadow: 0 2px 6px rgba(229, 57, 53, 0.4);
-  animation: badge-bounce 2s infinite;
-}
-
-@keyframes badge-bounce {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
 }
 
 .whatsapp-float-pulse {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #25D366;
-  animation: whatsapp-pulse 2s infinite;
-  z-index: 1;
-}
-
-@keyframes whatsapp-pulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-  70% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
+  display: none;
 }
 
 .whatsapp-float-tooltip {
@@ -1867,9 +1816,6 @@ button {
   transform: translateX(0);
 }
 
-.whatsapp-float:hover .whatsapp-float-pulse {
-  animation: none;
-}
 
 /* Responsive WhatsApp Button */
 @media (max-width: 768px) {
