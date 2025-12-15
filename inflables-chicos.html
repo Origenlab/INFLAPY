@@ -55,27 +55,36 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css">
 
-  <!-- Schema.org - Product -->
+  <!-- Schema.org - CollectionPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Renta de Inflables Chicos - INFLAPY",
-    "description": "Inflables compactos de 2x2 metros perfectos para bebes y niños pequeños. Ideales para departamentos, salas y espacios reducidos en CDMX y Estado de México.",
-    "brand": {
-      "@type": "Brand",
-      "name": "INFLAPY"
-    },
-    "category": "Inflables Chicos",
-    "audience": {
-      "@type": "PeopleAudience",
-      "suggestedMinAge": "1",
-      "suggestedMaxAge": "5"
-    },
-    "offers": {
-      "@type": "AggregateOffer",
-      "availability": "https://schema.org/InStock",
-      "áreaServed": ["Ciudad de México", "Estado de México"]
+    "@type": "CollectionPage",
+    "name": "Inflables Chicos para Fiestas Infantiles",
+    "description": "Catalogo de inflables chicos para renta en CDMX. Perfectos para bebes, departamentos y espacios reducidos.",
+    "url": "https://inflablesparafiestas.com.mx/inflables-chicos.html",
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Inflables Chicos Disponibles",
+      "numberOfItems": 1,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Mini Castillo Inflable",
+            "url": "https://inflablesparafiestas.com.mx/inflables-chicos/inflable-para-fiestas-infantiles-mini-castillo.html",
+            "description": "Inflable compacto de 2x2m perfecto para bebes de 1-3 anos",
+            "brand": {"@type": "Brand", "name": "INFLAPY"},
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "areaServed": ["Ciudad de Mexico", "Estado de Mexico"]
+            }
+          }
+        }
+      ]
     }
   }
   </script>
