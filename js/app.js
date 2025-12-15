@@ -1,149 +1,181 @@
 /**
  * INFLAPY - Renta de Inflables para Fiestas
- * JavaScript Interactivo
- *
- * Note: Header navigation is handled by components.js
- * This file handles page-specific interactions
+ * JavaScript Interactivo (Optimizado para rendimiento)
  */
 
 (function() {
   'use strict';
 
   // ============================================
-  // Wait for components to load before initializing
+  // Header Scroll Effect (optimizado)
   // ============================================
-  function initializeApp() {
-    // Header scroll effect (works after component loads)
-    initHeaderScrollEffect();
-  }
+  let ticking = false;
+  let lastScrollY = 0;
+  let header = null;
+  let isScrolled = false;
 
-  // Listen for components ready event
-  document.addEventListener('components:ready', initializeApp);
-
-  // Fallback if components already loaded or not using component system
-  if (document.querySelector('.header')) {
-    initHeaderScrollEffect();
-  }
-
-  function initHeaderScrollEffect() {
-    const header = document.querySelector('.header');
+  function updateHeader() {
     if (!header) return;
 
-    function handleHeaderScroll() {
-      const currentScroll = window.pageYOffset;
-      if (currentScroll > 50) {
+    const shouldBeScrolled = lastScrollY > 50;
+
+    // Solo modificar DOM si el estado cambio
+    if (shouldBeScrolled !== isScrolled) {
+      isScrolled = shouldBeScrolled;
+      if (isScrolled) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
       }
     }
+    ticking = false;
+  }
 
-    window.addEventListener('scroll', handleHeaderScroll, { passive: true });
-    // Run once on load
-    handleHeaderScroll();
+  function onScroll() {
+    lastScrollY = window.scrollY;
+    if (!ticking) {
+      requestAnimationFrame(updateHeader);
+      ticking = true;
+    }
+  }
+
+  function initHeaderScrollEffect() {
+    header = document.querySelector('.header');
+    if (!header) return;
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    // Estado inicial sin forzar reflow
+    lastScrollY = window.scrollY;
+    updateHeader();
+  }
+
+  // ============================================
+  // Inicializacion diferida
+  // ============================================
+  function initializeApp() {
+    initHeaderScrollEffect();
+    initCatalogFilter();
+    initSmoothScroll();
+    initFaqAccordion();
+    initLazyImages();
+  }
+
+  // Esperar a que el DOM este listo
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeApp);
+  } else {
+    // DOM ya esta listo, usar requestIdleCallback si esta disponible
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(initializeApp);
+    } else {
+      setTimeout(initializeApp, 1);
+    }
   }
 
   // ============================================
   // Catalog Filter
   // ============================================
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const productCards = document.querySelectorAll('.product-card');
+  function initCatalogFilter() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
 
-  filterButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      // Remove active class from all buttons
-      filterButtons.forEach(function(btn) {
-        btn.classList.remove('active');
-      });
+    if (!filterButtons.length) return;
 
-      // Add active class to clicked button
-      button.classList.add('active');
+    filterButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        filterButtons.forEach(function(btn) {
+          btn.classList.remove('active');
+        });
+        button.classList.add('active');
 
-      const filter = button.getAttribute('data-filter');
+        const filter = button.dataset.filter;
 
-      productCards.forEach(function(card) {
-        const category = card.getAttribute('data-category');
-
-        if (filter === 'todos' || category === filter) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
+        // Batch DOM changes
+        requestAnimationFrame(function() {
+          productCards.forEach(function(card) {
+            const category = card.dataset.category;
+            card.style.display = (filter === 'todos' || category === filter) ? 'block' : 'none';
+          });
+        });
       });
     });
-  });
+  }
 
   // ============================================
-  // Smooth Scroll for Anchor Links
+  // Smooth Scroll (optimizado)
   // ============================================
-  // Cache header height to avoid repeated reflows
   let cachedHeaderHeight = null;
 
-  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-    anchor.addEventListener('click', function(e) {
-      const targetId = this.getAttribute('href');
+  function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
 
-      if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (!targetElement) return;
 
-      const targetElement = document.querySelector(targetId);
-
-      if (targetElement) {
         e.preventDefault();
 
-        // Calculate header height once and cache it
+        // Calcular header height una sola vez
         if (cachedHeaderHeight === null) {
-          const header = document.querySelector('.header');
-          cachedHeaderHeight = header ? header.offsetHeight : 0;
+          const headerEl = document.querySelector('.header');
+          cachedHeaderHeight = headerEl ? headerEl.offsetHeight : 0;
         }
 
-        // Use requestAnimationFrame to batch DOM reads
+        // Usar requestAnimationFrame para evitar reflow
         requestAnimationFrame(function() {
-          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - cachedHeaderHeight;
+          const rect = targetElement.getBoundingClientRect();
+          const targetPosition = rect.top + window.scrollY - cachedHeaderHeight;
 
           window.scrollTo({
             top: targetPosition,
             behavior: 'smooth'
           });
         });
-      }
-    });
-  });
-
-
-  // ============================================
-  // FAQ Accordion Enhancement
-  // ============================================
-  const faqItems = document.querySelectorAll('.faq-item');
-
-  faqItems.forEach(function(item) {
-    const summary = item.querySelector('summary');
-
-    summary.addEventListener('click', function() {
-      // Close other open items
-      faqItems.forEach(function(otherItem) {
-        if (otherItem !== item && otherItem.hasAttribute('open')) {
-          otherItem.removeAttribute('open');
-        }
       });
     });
-  });
+  }
 
   // ============================================
-  // Lazy Load Images (placeholder for future)
+  // FAQ Accordion
   // ============================================
-  if ('IntersectionObserver' in window) {
+  function initFaqAccordion() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(function(item) {
+      const summary = item.querySelector('summary');
+      if (!summary) return;
+
+      summary.addEventListener('click', function() {
+        faqItems.forEach(function(otherItem) {
+          if (otherItem !== item && otherItem.hasAttribute('open')) {
+            otherItem.removeAttribute('open');
+          }
+        });
+      });
+    });
+  }
+
+  // ============================================
+  // Lazy Load Images
+  // ============================================
+  function initLazyImages() {
+    if (!('IntersectionObserver' in window)) return;
+
     const lazyImages = document.querySelectorAll('img[data-src]');
+    if (!lazyImages.length) return;
 
     const imageObserver = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           const img = entry.target;
-          img.src = img.getAttribute('data-src');
+          img.src = img.dataset.src;
           img.removeAttribute('data-src');
           imageObserver.unobserve(img);
         }
       });
-    });
+    }, { rootMargin: '50px' });
 
     lazyImages.forEach(function(img) {
       imageObserver.observe(img);
@@ -151,36 +183,15 @@
   }
 
   // ============================================
-  // WhatsApp Button - Always Visible (no animation)
+  // Utilidades exportadas
   // ============================================
-
-
-  // ============================================
-  // Form Validation (for future contact form)
-  // ============================================
-  function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-  }
-
-  function validatePhone(phone) {
-    const re = /^[\d\s\-\+\(\)]{10,}$/;
-    return re.test(phone);
-  }
-
-  // Export for potential future use
   window.INFLAPY = {
-    validateEmail: validateEmail,
-    validatePhone: validatePhone
+    validateEmail: function(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    },
+    validatePhone: function(phone) {
+      return /^[\d\s\-\+\(\)]{10,}$/.test(phone);
+    }
   };
-
-  // ============================================
-  // Console Welcome Message
-  // ============================================
-  console.log(
-    '%c INFLAPY %c La Fiesta Mas Epica! ',
-    'background: linear-gradient(135deg, #ff12cc, #FFD93D); color: white; padding: 10px 20px; border-radius: 5px 0 0 5px; font-weight: bold; font-size: 16px;',
-    'background: #111827; color: #ff12cc; padding: 10px 20px; border-radius: 0 5px 5px 0; font-size: 14px;'
-  );
 
 })();
