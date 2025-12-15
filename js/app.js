@@ -44,14 +44,6 @@
   }
 
   // ============================================
-  // Static Counter Display (no animation)
-  // ============================================
-  document.querySelectorAll('.stat-number[data-count]').forEach(function(counter) {
-    const target = counter.getAttribute('data-count');
-    counter.textContent = target;
-  });
-
-  // ============================================
   // Catalog Filter
   // ============================================
   const filterButtons = document.querySelectorAll('.filter-btn');
